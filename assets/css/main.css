@@ -87,7 +87,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  color: #051441;
+  color: #000000 /*#051441*/;
   margin: 0px; }
 
 h1 a,
