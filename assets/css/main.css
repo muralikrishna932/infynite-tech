@@ -1140,7 +1140,7 @@ p {
     padding: 10px 0; }
 
 .navbar {
-  padding: 20px 0;
+  padding: 5px 0;
   position: relative;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -1151,7 +1151,7 @@ p {
 .navbar-brand {
   padding: 0; }
   .navbar-brand img {
-    max-width: 250px; }
+    max-width: 235px; }
 
 .navbar-toggler {
   padding: 0px; }
