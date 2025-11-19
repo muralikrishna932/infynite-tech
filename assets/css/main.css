@@ -2131,7 +2131,7 @@ p {
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ffe723;
+  background-color: #FFFF00;
 }
 
 /* Style the tab content */
