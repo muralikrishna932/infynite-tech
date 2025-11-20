@@ -2132,6 +2132,7 @@ p {
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #FFFF00;
+  border-radius: 10px;
 }
 
 /* Style the tab content */
