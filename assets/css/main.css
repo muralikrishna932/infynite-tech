@@ -2143,3 +2143,41 @@ p {
   border-top: none;
 }
 
+/*------- mouse over ------- */
+.hover-style-1 {
+  position: relative;
+}
+.hover-style-1:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 0px;
+  transition: all 600ms ease;
+  /*background: linear-gradient(90deg, rgb(20 63 156) 0%, #03bdf6 100%);*/
+  background: linear-gradient(90deg, rgb(106, 3, 3) 0%, #187dff 100%);
+  border-color: rgb(4 153 220);
+  border-radius: 25px;
+}
+.hover-style-1 h3, .hover-style-1 p, .hover-style-1 a, .hover-style-1 i, .hover-style-1 h4 {
+  position: relative;
+  transition: all 600ms ease;
+}
+.hover-style-1:hover:before {
+  height: 100%;
+}
+.hover-style-1:hover a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.hover-style-1:hover h3,
+.hover-style-1:hover h4,
+.hover-style-1:hover p,
+.hover-style-1:hover a {
+  color: #fff;
+}
+
+.hover-style-1:hover i {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
