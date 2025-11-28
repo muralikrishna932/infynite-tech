@@ -128,7 +128,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  color: #6A7C92;
+  color: #000000;
   margin: 0px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     p {
@@ -2056,13 +2056,7 @@ p {
 
 
 
-
-
-
-
-
-
-/* Style the tab */
+/* Career Tabs */
 .tab {
   overflow: hidden;
   border: 0px solid #ccc;
@@ -2180,13 +2174,13 @@ p {
 }
 
 
-/* start floating-icon-whatsap */
+/* whatsap icon */
 .contact-wa-floating {
 	animation: effect 2s infinite;
 	animation-delay: 2s;
 	transform-origin: right bottom;
 	position: fixed;
-	bottom: 25%;
+	bottom: 42%;
 	right: 1%;
 	z-index: 99999;
 }
@@ -2399,6 +2393,39 @@ p {
 
 
 
+
+.embedded-agent-container {
+	font-family: Inter,sans-serif;
+	font-size: 16px;
+	color: #2c3345;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 100000000;
+	margin: 16px;
+	transition: all .2s ease;
+	pointer-events: none;
+}
+.ai-agent-chat-avatar-container {
+	transition: transform .3s ease-out;
+	will-change: transform;
+	position: relative;
+}
+.ai-agent-avatar-content {
+	transition: all .2s ease;
+}
+.ai-agent-avatar-content-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.ai-agent-chat-avatar-pulse-wrapper {
+	position: relative;
+}
+.ai-agent-chat-avatar.size-md {
+	width: 64px;
+	height: 64px;
+}
 
 
 
