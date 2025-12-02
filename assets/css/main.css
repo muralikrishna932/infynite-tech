@@ -2180,7 +2180,7 @@ p {
 	animation-delay: 2s;
 	transform-origin: right bottom;
 	position: fixed;
-	bottom: 42%;
+	bottom: 35%;
 	right: 1%;
 	z-index: 99999;
 }
@@ -2384,48 +2384,140 @@ p {
 	bottom: -2px;
 }
 
-
 .text-accent {
 	color: hsl(115.2, 100%, 44.3%);
 }
 
 
 
+/* ---who we are---start- */
 
-
-
-.embedded-agent-container {
-	font-family: Inter,sans-serif;
-	font-size: 16px;
-	color: #2c3345;
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	z-index: 100000000;
-	margin: 16px;
-	transition: all .2s ease;
-	pointer-events: none;
-}
-.ai-agent-chat-avatar-container {
-	transition: transform .3s ease-out;
-	will-change: transform;
-	position: relative;
-}
-.ai-agent-avatar-content {
-	transition: all .2s ease;
-}
-.ai-agent-avatar-content-wrapper {
+.who-are-main {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-}
-.ai-agent-chat-avatar-pulse-wrapper {
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 55px 0px;
 	position: relative;
 }
-.ai-agent-chat-avatar.size-md {
-	width: 64px;
-	height: 64px;
+
+.we-are-sec {
+	background-image: url(../img/bg/we-are.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
 }
+
+.who-are-head h1 {
+	font: normal normal 600 34px/44px Poppins;
+	letter-spacing: 0px;
+	color: #3763EB;
+}
+
+.we-are-item {
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 4px 6px #19181829;
+	padding: 30px;
+	width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .we-are-item {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+.margin-right-180 {
+	margin-right: 60px;
+	padding-top: 100px;
+}
+
+.margin-left-180 {
+	margin-left: 40px;
+	padding-bottom: 100px;
+}
+
+.who-we-shape {
+	position: absolute;
+	top: 18%;
+	width: 72%;
+	left: 248px;
+}
+
+@media only screen and (max-width: 767px) {
+  .who-we-shape {
+    top: 19%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.who-we-shape2 {
+	position: absolute;
+	top: 13%;
+	width: 72%;
+	left: 278px;
+}
+
+.who-we-shape2 img {
+	transform: scaleY(-1);
+  max-width: 100%;
+}
+
+.who-we-shape img {
+	border: none;
+  outline: none;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.who-are-main {
+		display: block;
+	}
+
+	.we-are-item {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.margin-right-180 {
+		margin-right: 0px;
+		padding-top: 0px;
+	}
+
+	.margin-left-180 {
+		margin-left: 0px;
+		padding-bottom: 0px;
+	}
+
+	.who-we-shape2 {
+		top: 19%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 80%;
+	}
+
+	.who-we-shape2 img {
+		transform: unset;
+  }
+
+}
+
+/* ---who we are---end- */
+
+
+
+
+
+
+
+
+
 
 
 
