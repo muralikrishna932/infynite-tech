@@ -1848,7 +1848,7 @@ p {
       font-size: 18px;
       font-weight: 700;
       border: none;
-      background: linear-gradient(to left, #3763eb 0%, #6f58e8 50.39%, #3763eb 100%);
+      background: #ed0d01;
       background-size: 200%;
       -webkit-transition: all 0.3s ease-out 0s;
       -moz-transition: all 0.3s ease-out 0s;
@@ -2055,6 +2055,7 @@ p {
         color: #fff; }
 
 
+.pt-about-5 { padding-top: 5px; }
 
 /* Career Tabs */
 .tab {
