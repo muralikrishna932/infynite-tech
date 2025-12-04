@@ -1638,7 +1638,7 @@ p {
       .about-section .about-content-wrapper .about-content .counter-up .counter:last-child {
         margin-right: 0; }
       .about-section .about-content-wrapper .about-content .counter-up .counter span {
-        font-size: 40px;
+        font-size: 32px;
         font-weight: 600;
         color: #3763EB;
         display: block;
@@ -2061,13 +2061,10 @@ p {
 .tab {
   overflow: hidden;
   border: 0px solid #ccc;
-  /*background-color: #e7f4ff;*/
   width: 41.23%;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
-  /*background-color: inherit;*/
   float: left;
   border: none;
   outline: none;
@@ -2076,24 +2073,21 @@ p {
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #FFFF00;
   border-radius: 10px;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  /*border: 1px solid #ccc;*/
   border-top: none;
-}
+} 
+/* Career Tabs */
 
 /*------- mouse over ------- */
 .hover-style-1 {
@@ -2365,6 +2359,7 @@ p {
    }
  }
 
+ /* Underline */
  .heading-indus {
 	font-weight: 600;
 	margin-top: -5px;
@@ -2383,6 +2378,8 @@ p {
 	left: 0px;
 	bottom: -2px;
 }
+
+/* Underline */
 
 .text-accent {
 	color: hsl(115.2, 100%, 44.3%);
@@ -2414,8 +2411,7 @@ p {
 }
 
 .we-are-item {
-	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-	background: #ffffff 0% 0% no-repeat padding-box;
+	background: #eff2f9 0% 0% no-repeat padding-box;
 	box-shadow: 0px 4px 6px #19181829;
 	padding: 30px;
 	width: 50%;
