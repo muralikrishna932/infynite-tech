@@ -2327,11 +2327,6 @@ p {
   display: block;
 }
 
- @media screen and (max-width: 767px) {
-   .hide-for-mob {
-     display: none;
-   }
-
    .wa-options-mob {
      display: none;
      position: fixed;
@@ -2357,7 +2352,7 @@ p {
    .wa-options-mob.show {
      display: block;
    }
- }
+
 
  /* Underline */
  .heading-indus {
