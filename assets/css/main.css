@@ -1413,8 +1413,8 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      /*background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, #0065f4 100%);*/
-      background: linear-gradient(to right, rgb(0, 74, 140) 0%, #00498b 100%);}
+      background-image: linear-gradient(to right, rgba(18, 1, 98, 0.92) 0%, #053c8c 100%);
+    }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
       margin-bottom: 25px; }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
