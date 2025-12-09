@@ -181,7 +181,7 @@ p {
   user-select: none;
   padding: 16px 48px;
   font-size: 18px;
-  border-radius: 50px;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
   z-index: 5;
@@ -265,7 +265,7 @@ p {
 
 
   .banner1-title h2 {
-    font-size: 55px;
+    font-size: 65px;
   }    
 
    .banner2-title h2 {
@@ -1413,7 +1413,7 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background-image: linear-gradient(to right, rgba(18, 1, 98, 0.92) 0%, #053c8c 100%);
+      background: linear-gradient(135deg,#133f91,#0d2f6e,#081a3f);
     }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
       margin-bottom: 25px; }
@@ -1510,7 +1510,7 @@ p {
     .box-style:hover .box-icon-style {
       color: #fff;
       border-color: transparent;
-      background: linear-gradient(#3763eb 0%, #6f58e8 100%); }
+      background: linear-gradient(#f80000 0%, #f40000 100%); }
       .box-style:hover .box-icon-style::after {
         opacity: 1;
         visibility: visible; }
@@ -1520,7 +1520,7 @@ p {
     border-radius: 50%;
     margin-bottom: 25px;
     background: #fff;
-    border: 2px solid #3763EB;
+    border: 3px dotted #3763EB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2174,8 +2174,8 @@ p {
 	animation-delay: 2s;
 	transform-origin: right bottom;
 	position: fixed;
-	bottom: 35%;
-	right: 1%;
+	bottom: 28%;
+	right: 1.6%;
 	z-index: 99999;
 }
 
@@ -2501,7 +2501,9 @@ p {
 
 /* ---who we are---end- */
 
-
+.uppercase{
+  text-transform: uppercase;
+}
 
 
 

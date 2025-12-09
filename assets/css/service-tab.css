@@ -396,7 +396,7 @@
 /**/
 .pcss3t-theme-1 > label {
 	margin: 0 5px 5px 0;
-	border-radius: 20px;
+	border-radius: 5px;
 	background: #f40000;
 	box-shadow: 0 2px rgba(0,0,0,0.2);
 	color: #fff;
@@ -455,7 +455,7 @@
 /**/
 .pcss3t > ul,
 .pcss3t > ul > li {
-	height: 1550px;
+	height: 2055px;
 }
 
 
@@ -847,7 +847,7 @@
 /**/
 .pcss2t-theme-1 > label {
 	margin: 0 5px 5px 0;
-	border-radius: 20px;
+	border-radius: 5px;
 	background: #f40000;
 	box-shadow: 0 2px rgba(0,0,0,0.2);
 	color: #fff;
@@ -909,3 +909,53 @@
 	height: 1420px;
 }
 
+
+/* ------------------------------------ 
+               Industries
+--------------------------------------- */
+
+.industries-img {
+	vertical-align: middle;
+	border-style: none;
+}
+
+.innovation_imgs .innovation-inside {
+	text-align: center;
+	flex: 1;
+	padding: 20px 0;
+}
+
+.innovation .innovation-inside h4 {
+	margin-top: 20px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.industries-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.industries-color-1 {
+	background-color: #ff3209;
+}
+
+.industries-color-2 {
+	background-color: #004a8c;
+}
+
+.industries-color-3 {
+	background-color: #520c0c;
+}
+
+.industries-color-4 {
+	background-color: #0040ff;
+}
+
+.industries-color-5 {
+	background-color: #180c52;
+}
