@@ -919,13 +919,13 @@
 	border-style: none;
 }
 
-.innovation_imgs .innovation-inside {
+.industries_imgs .industries-inside {
 	text-align: center;
 	flex: 1;
 	padding: 20px 0;
 }
 
-.innovation .innovation-inside h4 {
+.industries .industries-inside h4 {
 	margin-top: 20px;
 	font-size: 16px;
 	color: #fff;
@@ -940,22 +940,22 @@
 	margin-left: -15px;
 }
 
-.industries-color-1 {
+.industries-icon1-color-1 {
 	background-color: #ff3209;
 }
 
-.industries-color-2 {
+.industries-icon2-color-2 {
 	background-color: #004a8c;
 }
 
-.industries-color-3 {
+.industries-icon3-color-3 {
 	background-color: #520c0c;
 }
 
-.industries-color-4 {
+.industries-icon4-color-4 {
 	background-color: #0040ff;
 }
 
-.industries-color-5 {
+.industries-icon5-color-5 {
 	background-color: #180c52;
 }
