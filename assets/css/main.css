@@ -1517,7 +1517,7 @@ p {
   .box-style .box-icon-style {
     width: 78px;
     height: 78px;
-    border-radius: 50%;
+    border-radius: 15%;
     margin-bottom: 25px;
     background: #fff;
     border: 3px dotted #3763EB;
