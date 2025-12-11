@@ -1048,3 +1048,23 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
+
+.sub-heading {
+	display: inline-block;
+	padding: 5px 20px 5px 40px;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.sub-heading::before {
+	background-color: #004a8c;
+	content: "";
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 2px;
+}
