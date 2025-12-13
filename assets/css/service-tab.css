@@ -397,14 +397,14 @@
 .pcss3t-theme-1 > label {
 	margin: 0 5px 5px 0;
 	border-radius: 5px;
-	background: #f40000;
+	background: #004a8c;
 	box-shadow: 0 2px rgba(0,0,0,0.2);
 	color: #fff;
 	opacity: 0.8;
     font-size: 19px;
 }
 .pcss3t-theme-1 > label:hover {
-	background: #004a8c;
+	background: #ED0D01;
 	opacity: 1;
 }
 .pcss3t-theme-1 > input:checked + label {
@@ -848,14 +848,14 @@
 .pcss2t-theme-1 > label {
 	margin: 0 5px 5px 0;
 	border-radius: 5px;
-	background: #f40000;
+	background:#004a8c;
 	box-shadow: 0 2px rgba(0,0,0,0.2);
 	color: #fff;
 	opacity: 0.8;
     font-size: 19px;
 }
 .pcss2t-theme-1 > label:hover {
-	background: #004a8c;
+	background: #f40000;
 	opacity: 1;
 }
 .pcss2t-theme-1 > input:checked + label {

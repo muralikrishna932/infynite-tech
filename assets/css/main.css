@@ -257,7 +257,7 @@ p {
 .section-title span {
   font-size: 25px;
   font-weight: 700;
-  color: #3763EB;
+  color: #004A8C;
   margin-bottom: 5px; }
   @media (max-width: 767px) {
     .section-title span {
@@ -1640,7 +1640,7 @@ p {
       .about-section .about-content-wrapper .about-content .counter-up .counter span {
         font-size: 32px;
         font-weight: 600;
-        color: #3763EB;
+        color: #004A8C;
         display: block;
         margin-bottom: 8px; }
       .about-section .about-content-wrapper .about-content .counter-up .counter h4 {
