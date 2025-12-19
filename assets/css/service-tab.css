@@ -863,7 +863,7 @@
 	padding-bottom: 5px;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
-	color: #004a8c;
+	color: #000;
 	opacity: 1;
     font-size: 20px;
     font-weight: bold;
@@ -1068,3 +1068,37 @@
 	transform: translateY(-50%);
 	border-radius: 2px;
 }
+
+
+/* ----Contact list-----*/
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	/*background: rgba(25, 18, 255, 0.16);*/
+	background: #0F043C;
+	padding: 18px;
+	border-radius: 12px;
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	transition: all 0.3s ease;
+	width: 450px;
+}
+
+.contact-label {
+	font-size: 1.00rem;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 4px;
+}
+
+.contact-value {
+	color: white;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 1.05rem;
+}
+
+.contact-icon {
+	font-size: 1.5rem;
+}
+
