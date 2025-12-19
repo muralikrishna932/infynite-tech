@@ -1526,7 +1526,7 @@ p {
     border-radius: 15%;
     margin-bottom: 25px;
     background: #fff;
-    border: 3px dotted #3763EB;
+    /*border: 3px dotted #3763EB;*/
     display: flex;
     align-items: center;
     justify-content: center;
