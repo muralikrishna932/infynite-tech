@@ -216,7 +216,7 @@ p {
   color: #fff;
   border-radius: 5px;
   position: fixed;
-  bottom: 10px;
+  bottom: 25px;
   right: 30px;
   z-index: 9;
   cursor: pointer;
@@ -266,10 +266,18 @@ p {
 
   .banner1-title h2 {
     font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1), 
+    3px 4px 4px rgba(179, 147, 211, 0.15), 
+    4px 6px 4px rgba(179, 147, 211, 0.2), 
+    5px 8px 4px rgba(0, 0, 0, 0.75);
   }    
 
    .banner2-title h2 {
     font-size: 45px;
+    text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1), 
+    3px 4px 4px rgba(179, 147, 211, 0.15), 
+    4px 6px 4px rgba(179, 147, 211, 0.2), 
+    5px 8px 4px rgba(0, 0, 0, 0.75);
   }  
 
 .section-title h2 {
@@ -1418,8 +1426,7 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      /*background: linear-gradient(135deg,#133f91,#0d2f6e,#081a3f)*/
-      background: #093FB4;
+      background: linear-gradient(135deg, #953342, #0e0072);
     }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
       margin-bottom: 25px; }
@@ -2180,7 +2187,7 @@ p {
 	animation-delay: 2s;
 	transform-origin: right bottom;
 	position: fixed;
-	bottom: 28%;
+	bottom: 32%;
 	right: 2%;
 	z-index: 99999;
 }
