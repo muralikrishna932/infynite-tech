@@ -1075,12 +1075,10 @@
 	display: flex;
 	align-items: center;
 	gap: 12px;
-	/*background: rgba(25, 18, 255, 0.16);*/
-	background: #0F043C;
+	background: #0800FF4D;
 	padding: 18px;
 	border-radius: 12px;
 	backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, 0.3);
 	transition: all 0.3s ease;
 	width: 450px;
 }

@@ -2187,7 +2187,7 @@ p {
 	animation-delay: 2s;
 	transform-origin: right bottom;
 	position: fixed;
-	bottom: 32%;
+	bottom: 15%;
 	right: 2%;
 	z-index: 99999;
 }
