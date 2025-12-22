@@ -2195,7 +2195,7 @@ p {
 @media only screen and (max-width: 767px) {
   .contact-wa-floating {
     bottom: 20%;
-    right: 20%;
+    right: 12%;
   }
 }
 
