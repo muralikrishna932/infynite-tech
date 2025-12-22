@@ -1100,3 +1100,11 @@
 	font-size: 1.5rem;
 }
 
+.fa-check-circle::before {
+	content: "\f058";
+}
+
+.elementor-icon-list-icon i {
+  color: var( --e-global-color-secondary );
+  transition: color 0.3s;
+}
