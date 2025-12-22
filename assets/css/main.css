@@ -2192,6 +2192,13 @@ p {
 	z-index: 99999;
 }
 
+@media only screen and (max-width: 767px) {
+  .contact-wa-floating {
+    bottom: 20%;
+    right: 20%;
+  }
+}
+
 @keyframes effect {
 	0% {
 		transform: rotate(0deg);
