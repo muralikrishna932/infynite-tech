@@ -181,7 +181,7 @@ p {
   user-select: none;
   padding: 16px 48px;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
   z-index: 5;
@@ -1426,7 +1426,7 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: linear-gradient(135deg, #953342, #0e0072);
+      background: #051043;
     }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
       margin-bottom: 25px; }
@@ -2390,7 +2390,7 @@ p {
 /* Underline */
 
 .text-accent {
-	color: hsl(115.2, 100%, 44.3%);
+	color: hsl(225.3, 81.8%, 56.9%);
 }
 
 
