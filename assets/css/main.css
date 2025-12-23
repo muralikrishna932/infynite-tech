@@ -260,7 +260,7 @@ p {
   margin-bottom: 5px; 
   color: #fff;
   line-height: 1.2;
-  background: #004a8c;
+  background: linear-gradient(135deg, #0e0072,#953342);
   padding: 10px 25px;
   border-radius: 20px;}
 
