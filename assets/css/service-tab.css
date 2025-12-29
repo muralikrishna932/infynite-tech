@@ -1108,3 +1108,74 @@
   color: var( --e-global-color-secondary );
   transition: color 0.3s;
 }
+
+
+/* ------------------------------------ 
+			  Industries Icons
+---------------------------------------*/
+@media (min-width: 768px) {
+.icon-set {
+	width: 19%;
+	display: inline-block;
+	position: relative;
+}
+}
+
+.cd1 {
+	background: #70e4e8;
+}
+
+.cd2 {
+	background: #f5eb92;
+}
+
+.cd3 {
+	background: #a3ffe2;
+}
+
+.cd4 {
+	background: #ffbc7a;
+}
+
+.cd5 {
+	background: #f3a6ff;
+}
+
+.cd6 {
+	background: #e3ff8e;
+}
+
+.cd7 {
+	background: #ffa0c6;
+}
+
+.cd8 {
+	background: #77baff;
+}
+
+.cd9 {
+	background: #97ffaf;
+}
+
+.cd10 {
+	background: #6cfffa;
+}
+
+.work-card {
+	margin: 10px;
+	padding: 30px 20px;
+	max-height: 170px;
+	text-align: center;
+	min-height: 170px;
+	border-radius: 8px 40px 8px 40px;
+	-webkit-box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, 0.059), 0 8.2px 8.9px -30px rgba(0, 0, 0, 0.071), 0 25px 40px -30px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, 0.059), 0 8.2px 8.9px -30px rgba(0, 0, 0, 0.071), 0 25px 40px -30px rgba(0, 0, 0, 0.2);
+}
+
+.icon-bg {
+	display: block;
+	height: 62px;
+	width: 62px;
+	margin: 0 auto;
+	text-align: center;
+}
