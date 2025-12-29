@@ -180,14 +180,14 @@ p {
   -ms-user-select: none;
   user-select: none;
   padding: 16px 48px;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
   z-index: 5;
   transition: all .4s ease-in-out;
   border: none;
-  background: #ED0D01;
+  background: #f00;
   background-size: 200% auto;
   overflow: hidden; }
   .theme-btn:hover, .theme-btn:focus {
@@ -209,7 +209,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #d80512;
+  background: #f00;
   text-align: center;
   line-height: 45px;
   font-size: 20px;
@@ -1439,8 +1439,8 @@ p {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #f00;
+    color: #f00;
     top: 50%;
     left: 30px;
     -webkit-transform: translateY(-50%);
@@ -2386,7 +2386,7 @@ p {
 	content: "";
 	width: 100%;
 	height: 3px;
-	background: red;
+	background: #f00;
 	left: 0px;
 	bottom: -2px;
 }
