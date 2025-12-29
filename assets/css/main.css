@@ -271,29 +271,21 @@ p {
 
   .banner1-title h2 {
     font-size: 60px;
-    text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1), 
-    3px 4px 4px rgba(179, 147, 211, 0.15), 
-    4px 6px 4px rgba(179, 147, 211, 0.2), 
-    5px 8px 4px rgba(0, 0, 0, 0.75);
+    color: #010570;
+    font-weight: 650;
   }    
 
    .banner2-title h2 {
     font-size: 45px;
-    text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1), 
-    3px 4px 4px rgba(179, 147, 211, 0.15), 
-    4px 6px 4px rgba(179, 147, 211, 0.2), 
-    5px 8px 4px rgba(0, 0, 0, 0.75);
+    color: #010570;
+    font-weight: 600;
   }  
 
 .section-title h2 {
   line-height: 55px;
   font-weight: 600;
   margin-bottom: 15px; 
-  text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1),
-               3px 4px 4px rgba(179, 147, 211, 0.15),
-               4px 6px 4px rgba(179, 147, 211, 0.2),
-               5px 8px 4px rgba(179, 147, 211, 0.25);
-              }
+  }
   @media (max-width: 767px) {
     .section-title h2 {
       line-height: 41px; } }
@@ -1431,7 +1423,7 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: #413AA4;
+      background: linear-gradient(88deg,#ffdbbc 33.17%,#a0cdff 109.41%);
     }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
       margin-bottom: 25px; }
