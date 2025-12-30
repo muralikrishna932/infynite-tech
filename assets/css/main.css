@@ -270,7 +270,7 @@ p {
 
 
   .banner1-title h2 {
-    font-size: 60px;
+    font-size: clamp(3rem,8vw,7rem);
     color: #010570;
     font-weight: 650;
   }    
@@ -278,7 +278,7 @@ p {
    .banner2-title h2 {
     font-size: 45px;
     color: #010570;
-    font-weight: 600;
+    font-weight: 650;
   }  
 
 .section-title h2 {
