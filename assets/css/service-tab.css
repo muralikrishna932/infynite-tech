@@ -1187,7 +1187,7 @@
 		.slider-container {
 			max-width: 1410px;
 			width: 100%;
-			background: #004a8c36;
+			background: #F3E5ED;
 			border-radius: 20px;
 			padding: 60px 40px;
 			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -1198,7 +1198,7 @@
 	
 		@media only screen and (max-width: 767px) {
 			.slider-container {
-				height: 660px;
+				height: 680px;
 				margin-left: 25px;
 				width: 90%;
 			}

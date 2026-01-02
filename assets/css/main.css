@@ -27,7 +27,12 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #6A7C92;
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 * {
   margin: 0;
@@ -217,7 +222,7 @@ p {
   border-radius: 5px;
   position: fixed;
   bottom: 25px;
-  right: 30px;
+  right: 15px;
   z-index: 9;
   cursor: pointer;
   animation: animation1;
@@ -230,7 +235,7 @@ p {
 @media only screen and (max-width: 767px) {
   .scroll-top {
     bottom: 12%;
-    right: 12%;
+    right: 14%;
   }
 }
 
@@ -2193,7 +2198,7 @@ p {
 	transform-origin: right bottom;
 	position: fixed;
 	bottom: 15%;
-	right: 2%;
+	right: 1%;
 	z-index: 99999;
 }
 
