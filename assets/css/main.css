@@ -273,7 +273,7 @@ p {
   margin-bottom: 5px; 
   color: #fff;
   line-height: 1.2;
-  background: linear-gradient(135deg, #0e0072,#953342);
+  background: #007bff;
   padding: 10px 25px;
   border-radius: 20px;}
 
@@ -1663,7 +1663,7 @@ p {
       .about-section .about-content-wrapper .about-content .counter-up .counter span {
         font-size: 32px;
         font-weight: 600;
-        color: #004A8C;
+        color: #093FB4;
         display: block;
         margin-bottom: 8px; }
       .about-section .about-content-wrapper .about-content .counter-up .counter h4 {
