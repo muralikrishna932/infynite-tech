@@ -1471,7 +1471,7 @@
 
   .content h3 {
     font-size: clamp(3rem,8vw,3rem);
-    color: floralwhite;
+    color: #fff;
     font-weight: 700;
   }
 
