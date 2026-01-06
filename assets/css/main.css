@@ -205,7 +205,7 @@ p {
     padding: 10px 30px;
     /*background: transparent;
     border: 1.5px solid #3763EB;*/
-    color: #6A7C92;
+    color: #fff;
     font-size: 15px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -282,7 +282,7 @@ p {
       font-size: 20px; } }
 
 
-  .banner1-title h2 {
+  .banner-title h2 {
     font-size: clamp(3rem,8vw,7rem);
     color: #010570;
     font-weight: 650;

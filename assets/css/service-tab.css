@@ -16,7 +16,7 @@
 	border: 0;
 	outline: none;
 	font-size: 0;
-	text-align: left;
+	text-align: center;
 }
 .pcss3t > input {
 	position: absolute;
@@ -469,7 +469,7 @@
 	max-width: 1425px;
 	margin: 0 auto;
 	padding: 0 20px 40px;
-    background-color: #ecf6ff;
+    background-color: ghostwhite;
 }
 
 /**/
@@ -481,7 +481,7 @@
 	border: 0;
 	outline: none;
 	font-size: 0;
-	text-align: left;
+	text-align: center;
 }
 .pcss2t > input {
 	position: absolute;
@@ -1187,10 +1187,8 @@
 		.slider-container {
 			max-width: 1410px;
 			width: 100%;
-			background: #F3E5ED;
 			border-radius: 20px;
 			padding: 60px 40px;
-			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 			position: relative;
 			height: 620px;
 			margin-left: 45px;
@@ -1412,3 +1410,83 @@
 .logos:hover .logos-slide {
   animation-play-state: paused;
 }		
+
+
+/* ------------------------------------ 
+			  Banner Slider
+---------------------------------------*/
+.slider {
+  width: 100%;
+  height: 670px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(88deg,#ffdbbc 33.17%,#a0cdff 109.41%);
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* 100% * 3 slides */
+  height: 100%;
+  animation: slideAnim 15s infinite; /* Longer duration for more slides */
+}
+
+.slide {
+  width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The Dimming Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Adjust 0.5 for more/less dimming */
+  z-index: 1;
+}
+
+/* Text Content */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.content h2 {
+    font-size: clamp(4rem,8vw,7rem);
+    color: #010570;
+    font-weight: 650;
+  }    
+
+  .content h3 {
+    font-size: clamp(3rem,8vw,3rem);
+    color: floralwhite;
+    font-weight: 700;
+  }
+
+/* Updated Animation for 3 Slides */
+@keyframes slideAnim {
+  /* Slide 1 */
+  0%, 28% { transform: translateX(0); }
+  
+  /* Slide 2 */
+  33%, 61% { transform: translateX(-33.33%); }
+  
+  /* Slide 3 */
+  66%, 95% { transform: translateX(-66.66%); }
+  
+  /* Return to Start */
+  100% { transform: translateX(0); }
+}
+
