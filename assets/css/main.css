@@ -1941,8 +1941,8 @@ p {
     display: flex;
     border: 1px solid #F4EEFB;
     border-radius: 10px;
-    background: #fff;
-    margin-bottom: 30px;
+    background: #00B7FF4D;
+    margin-bottom: 10px;
     padding: 20px 30px;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
