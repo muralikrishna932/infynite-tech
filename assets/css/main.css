@@ -273,9 +273,9 @@ p {
   margin-bottom: 5px; 
   color: #fff;
   line-height: 1.2;
-  background: #007bff;
+  background: #004a8c;
   padding: 10px 25px;
-  border-radius: 20px;}
+  border-radius: 10px;}
 
   @media (max-width: 767px) {
     .section-title span {
@@ -1663,7 +1663,7 @@ p {
       .about-section .about-content-wrapper .about-content .counter-up .counter span {
         font-size: 32px;
         font-weight: 600;
-        color: #093FB4;
+        color: #004A8C;
         display: block;
         margin-bottom: 8px; }
       .about-section .about-content-wrapper .about-content .counter-up .counter h4 {

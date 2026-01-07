@@ -1192,6 +1192,7 @@
 			position: relative;
 			height: 620px;
 			margin-left: 45px;
+			background: rgb(24, 47, 66);
 		}
 	
 		@media only screen and (max-width: 767px) {
@@ -1209,12 +1210,12 @@
 	
 		.slider-header h2 {
 			font-size: 2.5rem;
-			color: #010570;
+			color: #fff;
 			margin-bottom: 10px;
 		}
 	
 		.slider-header p {
-			color: #000;
+			color: #fff;
 			font-size: 1.1rem;
 		}
 	
@@ -1258,7 +1259,7 @@
 	
 		.testimonial-text {
 			font-size: 1.2rem;
-			color: #000;
+			color: #fff;
 			line-height: 1.8;
 			margin-bottom: 25px;
 			font-style: italic;
@@ -1269,7 +1270,7 @@
 		.testimonial-text::before {
 			content: '"';
 			font-size: 4rem;
-			color: #667eea;
+			color: #fff;
 			opacity: 0.3;
 			position: absolute;
 			top: -20px;
@@ -1278,14 +1279,14 @@
 	
 		.testimonial-author {
 			font-size: 1.1rem;
-			color: #000;
+			color: #fff;
 			font-weight: 600;
 			margin-bottom: 5px;
 		}
 	
 		.testimonial-role {
 			font-size: 0.95rem;
-			color: #000;
+			color: #fff;
 		}
 	
 		.rating {
@@ -1293,8 +1294,8 @@
 		}
 	
 		.star {
-			color: #f00;
-			font-size: 1.3rem;
+			color: rgb(251, 205, 20);
+			font-size: 1.5rem;
 		}
 	
 		.slider-controls {
