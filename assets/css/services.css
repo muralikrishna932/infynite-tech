@@ -906,7 +906,7 @@
 /**/
 .pcss2t > ul,
 .pcss2t > ul > li {
-	height: 1325px;
+	height: 1205px;
 }
 
 
@@ -1197,7 +1197,7 @@
 	
 		@media only screen and (max-width: 767px) {
 			.slider-container {
-				height: 680px;
+				height: 720px;
 				margin-left: 25px;
 				width: 90%;
 			}
