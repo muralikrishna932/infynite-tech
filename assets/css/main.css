@@ -235,7 +235,7 @@ p {
 @media only screen and (max-width: 767px) {
   .scroll-top {
     bottom: 12%;
-    right: 14%;
+    right: 5%;
   }
 }
 
@@ -1161,7 +1161,7 @@ p {
   background: #fff;
   padding: 0px 0; }
   .sticky .navbar {
-    padding: 10px 0; }
+    padding: 28px 0; }
 
 .navbar {
   padding: 5px 0;
@@ -1421,83 +1421,6 @@ p {
         border-top: 1px solid rgba(0, 0, 0, 0.03); }
         .navbar-nav .nav-item .sub-menu > li > a:hover {
           background: rgba(0, 0, 0, 0.05); }
-
-.carousel-section-wrapper {
-  position: relative;
-  z-index: 3; }
-  .carousel-section-wrapper .carousel-section {
-    position: relative;
-    z-index: 3; }
-    .carousel-section-wrapper .carousel-section.clip-bg::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: linear-gradient(88deg,#ffdbbc 33.17%,#a0cdff 109.41%);
-    }
-    .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
-      margin-bottom: 25px; }
-    .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
-      margin-bottom: 40px; }
-    .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .border-btn {
-      /*border-color: #fff;*/
-      color: #fff; }
-      .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .border-btn:hover {
-        background: rgba(255, 255, 255, 0.2); }
-  .carousel-section-wrapper .carousel-control {
-    background: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid #f00;
-    color: #f00;
-    top: 50%;
-    left: 30px;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index: 99; }
-    .carousel-section-wrapper .carousel-control:hover {
-      background: #fff;
-      color: #3763EB; }
-    .carousel-section-wrapper .carousel-control.carousel-control-next {
-      left: auto;
-      right: 30px; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .carousel-section-wrapper .carousel-control {
-        top: auto;
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-        transform: translateY(0);
-        bottom: 80px;
-        margin: auto; }
-        .carousel-section-wrapper .carousel-control.carousel-control-prev {
-          left: 42%; }
-        .carousel-section-wrapper .carousel-control.carousel-control-next {
-          left: 10%; } }
-    @media (max-width: 767px) {
-      .carousel-section-wrapper .carousel-control {
-        top: auto;
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-        transform: translateY(0);
-        bottom: 80px;
-        margin: auto; }
-        .carousel-section-wrapper .carousel-control.carousel-control-prev {
-          left: 37%; }
-        .carousel-section-wrapper .carousel-control.carousel-control-next {
-          left: 23%; } }
-    .carousel-section-wrapper .carousel-control span {
-      background: none; }
 
 .client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo {
   padding: 10px;
@@ -2205,7 +2128,7 @@ p {
 @media only screen and (max-width: 767px) {
   .contact-wa-floating {
     bottom: 20%;
-    right: 12%;
+    right: 5%;
   }
 }
 
