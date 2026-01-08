@@ -1426,7 +1426,7 @@
 
 .slides {
   display: flex;
-  width: 300%; /* 100% * 3 slides */
+  width: 500%; /* 100% * 5 slides */
   height: 100%;
   animation: slideAnim 15s infinite; /* Longer duration for more slides */
 }
@@ -1476,6 +1476,18 @@
     font-weight: 700;
   }
 
+   .content h4 {
+    font-size: 4.3rem;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .content h5 {
+    font-size: 4.3rem;
+    color: #fff;
+    font-weight: 700;
+  }
+
   .content p {
     font-size: 1.0rem;
 	letter-spacing: 2px;
@@ -1495,17 +1507,23 @@
 
 /* Updated Animation for 3 Slides */
 @keyframes slideAnim {
-  /* Slide 1 */
-  0%, 28% { transform: translateX(0); }
-  
-  /* Slide 2 */
-  33%, 61% { transform: translateX(-33.33%); }
-  
-  /* Slide 3 */
-  66%, 95% { transform: translateX(-66.66%); }
-  
-  /* Return to Start */
-  100% { transform: translateX(0); }
+ /* Slide 1 */
+ 0%, 18% { transform: translateX(0); }
+            
+ /* Slide 2 */
+ 20%, 38% { transform: translateX(-20%); }
+            
+ /* Slide 3 */
+ 40%, 58% { transform: translateX(-40%); }
+            
+ /* Slide 4 */
+ 60%, 78% { transform: translateX(-60%); }
+            
+ /* Slide 5 */
+ 80%, 98% { transform: translateX(-80%); }
+            
+ /* Return to Start */
+ 100% { transform: translateX(0); }
 }
 
 
