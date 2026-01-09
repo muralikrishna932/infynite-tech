@@ -1442,8 +1442,8 @@ p {
 
 .box-style {
   padding: 40px 30px;
-  border: 1px solid #F4EEFB;
-  border-radius: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -2087,10 +2087,9 @@ p {
   width: 100%;
   height: 0px;
   transition: all 600ms ease;
-  /*background: linear-gradient(90deg, rgb(20 63 156) 0%, #03bdf6 100%);*/
   background: rgb(55, 59, 84);
   border-color: rgb(4 153 220);
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .hover-style-2 h3, .hover-style-2 p, .hover-style-2 a, .hover-style-2 i, .hover-style-2 h4 {
   position: relative;

@@ -455,7 +455,7 @@
 /**/
 .pcss3t > ul,
 .pcss3t > ul > li {
-	height: 2605px;
+	height: 2335px;
 }
 
 
@@ -906,7 +906,7 @@
 /**/
 .pcss2t > ul,
 .pcss2t > ul > li {
-	height: 1205px;
+	height: 1250px;
 }
 
 
@@ -1190,14 +1190,14 @@
 			border-radius: 20px;
 			padding: 20px 40px;
 			position: relative;
-			height: 620px;
+			height: 570px;
 			margin-left: 45px;
 			background: rgb(24, 47, 66);
 		}
 	
 		@media only screen and (max-width: 767px) {
 			.slider-container {
-				height: 720px;
+				height: 710px;
 				margin-left: 25px;
 				width: 90%;
 			}
