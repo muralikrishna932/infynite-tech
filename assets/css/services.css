@@ -1424,11 +1424,23 @@
   background: linear-gradient(88deg,#ffdbbc 33.17%,#a0cdff 109.41%);
 }
 
+.slide .service-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 4rem;
+  font-weight: 800;
+  color: color-mix(in srgb, #fff, transparent 15%);
+  line-height: 1;
+  opacity: 0.5;
+  z-index: 1;
+}
+
 .slides {
   display: flex;
   width: 500%; /* 100% * 5 slides */
   height: 100%;
-  animation: slideAnim 15s infinite; /* Longer duration for more slides */
+  animation: slideAnim 25s infinite; /* Longer duration for more slides */
 }
 
 .slide {
