@@ -1176,7 +1176,7 @@ p {
   padding: 0; 
   margin-top: 10px;}
   .navbar-brand img {
-    max-width: 235px; }
+    max-width: 260px; }
 
 .navbar-toggler {
   padding: 0px; }
@@ -1445,6 +1445,7 @@ p {
   border: 1px solid #000;
   border-radius: 15px;
   margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
