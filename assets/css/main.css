@@ -133,7 +133,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  color: #000000;
+  color: #051441;
   margin: 0px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     p {
@@ -298,6 +298,7 @@ p {
   line-height: 55px;
   font-weight: 600;
   margin-bottom: 15px; 
+  color:#051441
   }
   @media (max-width: 767px) {
     .section-title h2 {
@@ -1501,7 +1502,8 @@ p {
   .box-style .box-content-style h4 {
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    color:#051441 }
 
 /*===========================
     04. About CSS 
