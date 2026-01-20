@@ -1686,4 +1686,24 @@ text-align: center;
             }
         }
 
+.section-title .tittle h1 {
+text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: #044b8c;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
 
+.section-title .tittle h1:after,.section-title .tittle h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #f70606;
+    border-top: 1px solid #f80505;
+    height: 5px;
+}
