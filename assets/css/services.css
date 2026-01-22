@@ -1707,3 +1707,153 @@ text-align: center;
     border-top: 1px solid #f80505;
     height: 5px;
 }
+
+
+
+/* ------------------------------------ 
+		  Service Details Page
+--------------------------------------*/
+
+.page-title {
+  color: #212428;
+  background-color: #fff;
+  position: relative;
+}
+
+.page-title .heading {
+  padding: 80px 0;
+  border-top: 1px solid color-mix(in srgb, #1e2226, transparent 90%);
+  background-color: #afd9ff;
+}
+
+.page-title .heading h1 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.page-title nav {
+  background-color: color-mix(in srgb, #ffe404, transparent 85%);
+  padding: 20px 0;
+}
+
+.page-title nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page-title nav ol li+li {
+  padding-left: 10px;
+}
+
+.page-title nav ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, #f00, transparent 35%);;
+}
+
+
+/*--------------------------------------------------------------
+# Departments Tabs Section
+--------------------------------------------------------------*/
+.departments-tabs .section-label {
+  color: #175cdd;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  display: block;
+}
+
+.departments-tabs .medical-specialties {
+  margin-top: 3rem;
+}
+
+.departments-tabs .specialty-navigation {
+  margin-bottom: 2rem;
+}
+
+
+.departments-tabs .specialty-navigation .nav-pills a{
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .departments-tabs .specialty-navigation .nav-pills {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.departments-tabs .specialty-navigation .department-tab {
+  background-color: color-mix(in srgb, #3c4049, transparent 95%);
+  border: none;
+  border-radius: 0;
+  color: #3c4049;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .departments-tabs .specialty-navigation .department-tab {
+    font-size: 1rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .departments-tabs .specialty-navigation .department-tab {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.departments-tabs .specialty-navigation .department-tab:hover {
+  background-color: color-mix(in srgb, #f00, transparent 10%);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.departments-tabs .specialty-navigation .department-tab.active {
+  background-color: #175cdd;
+  color: #ffffff;
+}
+
+.departments-tabs .specialty-navigation .department-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #175cdd;
+}
+
+@media (max-width: 768px) {
+  .departments-tabs .specialty-navigation .department-tab.active::after {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
