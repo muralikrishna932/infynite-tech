@@ -1711,7 +1711,7 @@ text-align: center;
 
 
 /* ------------------------------------ 
-		  Service Details Page
+	Service Details tittle section
 --------------------------------------*/
 
 .page-title {
@@ -1758,7 +1758,7 @@ text-align: center;
 
 
 /*--------------------------------------------------------------
-# Departments Tabs Section
+# Service Details Tabs Section
 --------------------------------------------------------------*/
 .departments-tabs .section-label {
   color: #175cdd;
@@ -1852,8 +1852,119 @@ text-align: center;
 }
 
 
+/*--------------------------------------------------------------
+# Home page Services Section
+--------------------------------------------------------------*/
 
+.services .services-container {
+  margin-bottom: 60px;
+}
 
+.services .services-container .service-item {
+  display: flex;
+  background-color: #1f1f23;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 30px color-mix(in srgb, #000, transparent 92%);
+  transition: all 0.4s ease;
+  height: 100%;
+}
 
+.services .services-container .service-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px color-mix(in srgb, #000, transparent 85%);
+}
+
+.services .services-container .service-item:hover .service-icon {
+  background-color: #f00;
+  color: #ffffff;
+}
+
+.services .services-container .service-item:hover .service-link {
+  color: #f00;
+}
+
+.services .services-container .service-item:hover .service-link i {
+  transform: translateX(5px);
+}
+
+.services .services-container .service-item .service-icon {
+  flex: 0 0 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: color-mix(in srgb, #0046ecc4, transparent 0%);
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.services .services-container .service-item .service-content {
+  padding: 30px;
+  position: relative;
+}
+
+.services .services-container .service-item .service-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 4rem;
+  font-weight: 800;
+  color: color-mix(in srgb, #ffffff, transparent 78%);
+  line-height: 1;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.services .services-container .service-item .service-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.services .services-container .service-item .service-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: color-mix(in srgb, rgba(255, 255, 255, 0.8), transparent 20%);
+  position: relative;
+  z-index: 2;
+}
+
+.services .services-container .service-item .service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: color-mix(in srgb, #fff, transparent 20%);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.services .services-container .service-item .service-link i {
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 60px 0;
+  }
+
+  .services .services-container .service-item {
+    flex-direction: column;
+  }
+
+  .services .services-container .service-item .service-icon {
+    flex: 0 0 auto;
+    height: 80px;
+    width: 100%;
+  }
+}
 
 
