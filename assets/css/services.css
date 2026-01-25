@@ -1192,7 +1192,7 @@
 			position: relative;
 			height: 570px;
 			margin-left: 45px;
-			background: rgb(24, 47, 66);
+			background: rgb(28, 39, 54);
 		}
 	
 		@media only screen and (max-width: 767px) {
@@ -1862,7 +1862,7 @@ text-align: center;
 
 .services .services-container .service-item {
   display: flex;
-  background-color: #1f1f23;
+  background-color: rgb(28, 39, 54);
   border-radius: 16px;
   overflow: hidden;
   position: relative;
@@ -1930,7 +1930,7 @@ text-align: center;
   font-size: 0.95rem;
   line-height: 1.7;
   margin-bottom: 20px;
-  color: color-mix(in srgb, rgba(255, 255, 255, 0.8), transparent 20%);
+  color: color-mix(in srgb, #fff, transparent 20%);
   position: relative;
   z-index: 2;
 }

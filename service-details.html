@@ -139,12 +139,12 @@
                                 <div class="col-12">
                                     <div class="specialty-navigation">
                                         <div class="nav nav-pills d-flex" id="specialty-tabs" role="tablist" data-aos="fade-up" data-aos-delay="400">
-                                            <a class="department-tab active" onclick="openCity('event', 'it-dev')" href="#">Software Development</a>
-                                            <a class="department-tab" onclick="openCity('event', 'digi-market')" href="#">Digital Marketing</a>
-                                            <a class="department-tab" onclick="openCity('event', 'bpo')" href="#">BPO Services</a>
-                                            <a class="department-tab" onclick="openCity('event', 'staffing')" href="#">Staffing Services</a>
-                                            <a class="department-tab" onclick="openCity('event', 'training')" href="#">IT Training</a>
-                                            <a class="department-tab" onclick="openCity('event', 'consulting')" href="#">IT Consulting</a>
+                                            <a class="department-tab active" onclick="openService(event, 'it-dev')" href="#">Software Development</a>
+                                            <a class="department-tab" onclick="openService(event, 'digi-market')" href="#">Digital Marketing</a>
+                                            <a class="department-tab" onclick="openService(event, 'bpo')" href="#">BPO Services</a>
+                                            <a class="department-tab" onclick="openService(event, 'staffing')" href="#">Staffing Services</a>
+                                            <a class="department-tab" onclick="openService(event, 'training')" href="#">IT Training</a>
+                                            <a class="department-tab" onclick="openService(event, 'consulting')" href="#">IT Consulting</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1832,15 +1832,15 @@
             <script src="assets/js/main.js"></script>
             <script src="assets/js/testimonial.js"></script>
             <script>
-                function openCity(evt, tabName) { 
+                function openService(evt, tabName) { 
                     var i, x, tablinks;
                     x = document.getElementsByClassName("tabContent");
                     for (i = 0; i < x.length; i++) {
                         x[i].style.display = "none";
                     }
                     tablinks = document.getElementsByClassName("department-tab");
-                    for (i = 0; i < x.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace("active", "");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
                     }
                     document.getElementById(tabName).style.display = "block";
                     evt.currentTarget.className += " active";
