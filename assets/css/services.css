@@ -2134,3 +2134,185 @@ text-align: center;
     font-size: 14px;
   }
 }
+
+
+/*--------------------------------------------------------------
+# Error 404 Section
+--------------------------------------------------------------*/
+.error-404 {
+  padding: 120px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--accent-color), transparent 97%) 100%);
+}
+
+.error-404 .error-number {
+  font-size: clamp(120px, 20vw, 280px);
+  font-weight: 300;
+  color: color-mix(in srgb, var(--heading-color), transparent 15%);
+  line-height: 0.8;
+  margin-bottom: 40px;
+  font-family: var(--heading-font);
+  letter-spacing: -0.02em;
+}
+
+.error-404 .error-title {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 300;
+  color: var(--heading-color);
+  margin-bottom: 32px;
+  letter-spacing: -0.01em;
+}
+
+.error-404 .error-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-404 .error-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 576px) {
+  .error-404 .error-actions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+.error-404 .error-actions .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background-color: #165cdf;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 2px solid #165cdf;
+}
+
+.error-404 .error-actions .btn-primary:hover {
+  background-color: transparent;
+  color: #165cdf;
+  transform: translateY(-2px);
+}
+
+.error-404 .error-actions .btn-primary i {
+  font-size: 18px;
+}
+
+.error-404 .error-actions .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background-color: transparent;
+  color: #122344;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 2px solid color-mix(in srgb, #3e434d, transparent 80%);
+}
+
+.error-404 .error-actions .btn-secondary:hover {
+  border-color: #165cdf;
+  color: #165cdf;
+  transform: translateY(-2px);
+}
+
+.error-404 .error-actions .btn-secondary i {
+  font-size: 18px;
+}
+
+.error-404 .helpful-links {
+  text-align: center;
+}
+
+.error-404 .helpful-links h3 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #122344;
+  margin-bottom: 40px;
+}
+
+.error-404 .helpful-links .links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .error-404 .helpful-links .links-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.error-404 .helpful-links .link-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px 20px;
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  text-decoration: none;
+  color: #3a3e46;
+  transition: all 0.3s ease;
+  border: 1px solid color-mix(in srgb, #3a3e46, transparent 90%);
+}
+
+.error-404 .helpful-links .link-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px color-mix(in srgb,#3a3e46, transparent 90%);
+  color: var(--accent-color);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+
+.error-404 .helpful-links .link-item span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.error-404 .helpful-links .link-item:hover i {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .error-404 {
+    padding: 80px 0;
+  }
+
+  .error-404 .error-actions {
+    margin-bottom: 60px;
+  }
+
+  .error-404 .helpful-links .links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .error-404 .helpful-links .links-grid {
+    grid-template-columns: 1fr;
+  }
+}
