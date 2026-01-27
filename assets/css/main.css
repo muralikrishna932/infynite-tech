@@ -2462,8 +2462,90 @@ p {
 }
 
 
+/*===========================
+  Header Top CSS
+===========================*/
+.header-top-section {
+	background-color: rgb(0, 74, 140);
+	padding: 10px 0;
+	position: relative;
+	z-index: 99;
+}
 
+ @media (max-width: 768px) {
+  .header-top-section {
+    display: none;
+  }
+}
 
+.fix {
+	overflow: hidden;
+}
+
+@media (max-width: 1399px) {
+  .header-top-section .container-fluid {
+    padding: 0 50px;
+  }
+}
+
+.header-top-section .container-fluid {
+  padding: 0 130px;
+}
+
+.header-top-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  margin-left: -37px;
+}
+
+.header-top-wrapper .contact-list {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.header-top-wrapper .contact-list li {
+	font-size: 15px;
+	color: #fff;
+}
+
+.header-top-wrapper .contact-list a {
+	color: #fff;
+}
+
+.header-top-wrapper .top-right {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.header-top-wrapper .top-right .social-icon {
+	gap: 15px;
+}
+
+.align-items-center {
+	align-items: center !important;
+}
+
+.header-top-wrapper .top-right .social-icon span {
+	color: #fff;
+	font-weight: 500;
+}
+
+.header-top-wrapper .top-right .p {
+	margin: 0;
+	transition: all .4s ease-in-out;
+}
+
+.header-top-wrapper .top-right .social-icon a {
+	color: #fff;
+}
+
+.header-top-wrapper .contact-list li i {
+	color: #fff;
+	margin-right: 10px;
+}
 
 
 
