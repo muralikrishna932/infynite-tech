@@ -1443,7 +1443,7 @@ p {
 
 .box-style {
   padding: 40px 30px;
-  border: 1px solid #000;
+  border: 1px dotted #000;
   border-radius: 15px;
   margin-bottom: 30px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
