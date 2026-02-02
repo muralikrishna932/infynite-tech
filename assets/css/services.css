@@ -1506,6 +1506,7 @@ text-align: center;
     font-size: 4.2rem;
     color: #fff;
     font-weight: 700;
+    font-variant: petite-caps;
   }
 
  @media only screen and (max-width: 767px) {
@@ -1520,6 +1521,7 @@ text-align: center;
     font-size: 4.3rem;
     color: #fff;
     font-weight: 700;
+    font-variant: petite-caps;
   }
 
   @media only screen and (max-width: 767px) {
