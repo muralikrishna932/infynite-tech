@@ -133,33 +133,4 @@
 			
 //===================================================//
 
-/* --- whatsap --- */
-  function redirectToWhatsApp(type){
-    const jobNumber = "983467367234";
-    const businessNumber = "983467367234";
-
-    let phone = type === "job" ? jobNumber : businessNumber;
-    window.open(`https://api.whatsapp.com/send/?phone=${phone}`, "_blank");
-  }
-
-   function toggleWhatsAppOptions(event) {
-    event.preventDefault();
-    const optionsDiv = document.getElementById('wa-options-mob');
-    optionsDiv.classList.toggle('show');
-  }
-
-  // Close when clicking outside
-  document.addEventListener('click', function(event) {
-    const popup = document.getElementById('wa-options-mob');
-    const button = document.querySelector('.whatsapp-btn');
-
-    const clickedInsidePopup = popup.contains(event.target);
-    const clickedOnButton = button.contains(event.target);
-
-    // If not clicking inside the popup or on the button, hide it
-    if (!clickedInsidePopup && !clickedOnButton) {
-      popup.classList.remove('show');
-    }
-  });
-
   
