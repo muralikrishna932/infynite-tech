@@ -1253,12 +1253,11 @@
 			border-radius: 50%;
 			margin: 0 auto 25px;
 			object-fit: cover;
-			/*border: 4px solid #667eea;*/
 			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 		}
 	
 		.testimonial-text {
-			font-size: 1.2rem;
+			font-size: 1.0rem;
 			color: #fff;
 			line-height: 1.8;
 			margin-bottom: 25px;
