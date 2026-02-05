@@ -41,7 +41,8 @@
         margin:0;
         padding:10px 5px;
          line-height: 0;
-         color:#fff
+         color:#fff;
+         margin-left: 68px;
 }
 .card-desc {
 	padding: 1.25rem;

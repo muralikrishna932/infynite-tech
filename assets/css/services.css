@@ -1708,8 +1708,8 @@ text-align: center;
 .section-title .tittle h1:after,.section-title .tittle h1:before {
     content: " ";
     display: block;
-    border-bottom: 1px solid #f70606;
-    border-top: 1px solid #f80505;
+    border-bottom: 3px dotted #f70606;
+    border-top: 3px dotted #f70606;
     height: 5px;
 }
 
