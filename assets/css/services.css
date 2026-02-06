@@ -1074,7 +1074,7 @@
 .contact-item {
 	display: flex;
 	align-items: center;
-	gap: 12px;
+	gap: 15px;
 	background: #0800FF4D;
 	padding: 18px;
 	border-radius: 12px;
