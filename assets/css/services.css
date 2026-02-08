@@ -2321,3 +2321,28 @@ text-align: center;
     grid-template-columns: 1fr;
   }
 }
+
+
+
+ .section-subtitle {
+	display: inline-block;
+	font-size: 1.25rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	color: #004a8c;
+	margin-bottom: 12px;
+	position: relative;
+	padding-left: 45px;
+}
+
+.section-subtitle::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 35px;
+	height: 3px;
+	background: #f00;
+	transform: translateY(-50%);
+}
