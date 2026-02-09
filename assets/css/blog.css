@@ -69,7 +69,7 @@
 	padding: 0;
 }
 .btn-card{
-	background-color: #004A8C;
+	background-color: #F00;
     padding: .84rem 2.14rem;
     font-size: .81rem;
     border-radius: 1.125rem;
@@ -79,7 +79,7 @@
     word-wrap: break-word;
 }
 .btn-card:hover {
-    background: #F00;
+    background: #004A8C;
 }
 a.btn-card {
     text-decoration: none;
