@@ -1728,7 +1728,7 @@ text-align: center;
 .page-title .heading {
   padding: 80px 0;
   border-top: 1px solid color-mix(in srgb, #1e2226, transparent 90%);
-  background-color: #afd9ff;
+  background: linear-gradient(45deg, #8ec5fc 0.000%, #8dd3ff 25.000%, #a1d8ff 50.000%, #c1d2ff 75.000%, #e0c3ff 100.000%);
 }
 
 .page-title .heading h1 {
