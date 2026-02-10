@@ -2322,8 +2322,9 @@ text-align: center;
   }
 }
 
-
-
+/*--------------------------------------------------------------
+  Section Tittle
+--------------------------------------------------------------*/
  .section-subtitle {
 	display: inline-block;
 	font-size: 1.25rem;
@@ -2345,4 +2346,49 @@ text-align: center;
 	height: 3px;
 	background: #f00;
 	transform: translateY(-50%);
+}
+
+/*--------------------------------------------------------------
+   Slider Buttons
+--------------------------------------------------------------*/
+.slider-btn {
+	background: #34ccff none repeat scroll 0 0;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 15px 38px;
+	text-align: center;
+	text-transform: capitalize;
+	touch-action: manipulation;
+	transition: all 0.4s ease-out 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.slider-btn.red-btn {
+	background: #f00 !important;
+}
+
+ a.slider-btn.red-btn:hover {
+  color: #001d67;
+  background: #cee2ff !important;
+  box-shadow: none;
+}
+
+.slider-btn.gray-btn {
+	color: #001d67;
+	box-shadow: none;
+	background: #cee2ff !important;
+}
+
+a.slider-btn.gray-btn:hover {
+  color: #ffffff;
+  background: #f00 !important;
+  box-shadow: none;
 }
