@@ -123,6 +123,124 @@
 	Chatbot Configuration
 	=======================================*/
 	window.chtlConfig = { chatbotId: "4218465813" }
+
+
+ /*=====================================
+	Blog Slider
+	=======================================*/
+	document.addEventListener('DOMContentLoaded', function() {
+    let currentPosition = 0;
+    const slider = document.getElementById('slider');
+    const items = document.querySelectorAll('.blog-item');
+    const totalItems = items.length;
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const progressFill = document.getElementById('progressFill');
+    const progressInfo = document.getElementById('progressInfo');
+    
+    let itemsPerView = 4;
+
+    function updateItemsPerView() {
+        if (window.innerWidth <= 768) {
+            itemsPerView = 1;
+        } else if (window.innerWidth <= 992) {
+            itemsPerView = 2;
+        } else if (window.innerWidth <= 1200) {
+            itemsPerView = 3;
+        } else {
+            itemsPerView = 4;
+        }
+        updateSlider();
+    }
+
+    // Make slide function global so onclick can access it
+    window.slide = function(direction) {
+        const maxPosition = totalItems - itemsPerView;
+        currentPosition += direction;
+
+        if (currentPosition < 0) currentPosition = 0;
+        if (currentPosition > maxPosition) currentPosition = maxPosition;
+
+        updateSlider();
+    }
+
+    function updateSlider() {
+        if (items.length === 0) return;
+        
+        const itemWidth = items[0].offsetWidth;
+        const gap = 25;
+        const offset = currentPosition * (itemWidth + gap);
+        
+        slider.style.transform = `translateX(-${offset}px)`;
+
+        // Update buttons
+        const maxPosition = totalItems - itemsPerView;
+        prevBtn.disabled = currentPosition === 0;
+        nextBtn.disabled = currentPosition >= maxPosition;
+
+        // Update progress
+        const progress = maxPosition > 0 ? (currentPosition / maxPosition) * 100 : 0;
+        progressFill.style.width = `${progress}%`;
+        progressInfo.textContent = `${currentPosition + 1} / ${maxPosition + 1}`;
+    }
+
+    // Auto slide
+    let autoSlideInterval = setInterval(() => {
+        const maxPosition = totalItems - itemsPerView;
+        if (currentPosition >= maxPosition) {
+            currentPosition = -1;
+        }
+        window.slide(1);
+    }, 4000);
+
+    // Pause on hover
+    slider.addEventListener('mouseenter', () => {
+        clearInterval(autoSlideInterval);
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        autoSlideInterval = setInterval(() => {
+            const maxPosition = totalItems - itemsPerView;
+            if (currentPosition >= maxPosition) {
+                currentPosition = -1;
+            }
+            window.slide(1);
+        }, 4000);
+    });
+
+    // Touch support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    slider.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    slider.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 50) {
+            window.slide(1);
+        }
+        if (touchEndX - touchStartX > 50) {
+            window.slide(-1);
+        }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            window.slide(-1);
+        } else if (e.key === 'ArrowRight') {
+            window.slide(1);
+        }
+    });
+
+    // Responsive
+    window.addEventListener('resize', updateItemsPerView);
+    
+    // Initialize
+    updateItemsPerView();
+});
 	
 })();
 

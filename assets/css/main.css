@@ -937,7 +937,6 @@ p {
 
 .pt-130 {
   padding-top: 130px; 
-  Background: #f0f6ff;
 }
 
 .pt-135 {
@@ -2525,6 +2524,7 @@ a.slider-btn.gray-btn:hover {
   background-color: #ffffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 24px 0 30px 0;
+  border-radius: 15px;
 }
 
 .contact .info-item i {
@@ -2561,6 +2561,7 @@ a.slider-btn.gray-btn:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 30px;
+  border-radius: 15px;
 }
 
 @media (max-width: 575px) {
