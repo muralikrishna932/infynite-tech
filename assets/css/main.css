@@ -1867,156 +1867,365 @@ p {
 /*===========================
     Caraousel CSS
   ===========================*/
-.carousel-section-wrapper {
+/* Carousel Container */
+.carousel-wrapper {
   position: relative;
-  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.carousel-section-wrapper .carousel-section {
+.carousel-container {
   position: relative;
-  z-index: 3;
+  width: 100%;
+  height: 100%;
 }
 
-.carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h4 {
-  font-size: 4.3rem;
-  color: #fff;
-  font-weight: 700;
-  font-variant: petite-caps;
-  letter-spacing: 2px;
+/* Individual Slides */
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 767px) {
-  .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h4 {
-    font-size: 4.3rem;
-    color: #fff;
-    font-weight: 700;
-    font-variant: petite-caps;
-    letter-spacing: 2px;
-  }
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
 }
 
-.carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h3 {
-  font-size: 4.2rem;
-  color: #fff;
-  font-weight: 700;
-  font-variant: petite-caps;
-  letter-spacing: 2px;
+/* Overlay for text readability */
+.slide-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
 }
 
-@media only screen and (max-width: 767px) {
-  .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h3 {
-    font-size: 3.6rem;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
+.slide-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  padding: 0 50px;
+  color: white;
+  margin-bottom: 100px;
 }
 
-.carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
-  font-size: 1.0rem;
-  letter-spacing: 2px;
-  color: #fff;
-  text-align: left;
-}
-
-@media only screen and (max-width: 767px) {
-  .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
-    font-size: 1.0rem;
-    letter-spacing: 2px;
-    color: #fff;
-    text-align: left;
-  }
-}
-
-.carousel-section-wrapper .carousel-control {
-  background: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  color: #fff;
-  top: 50%;
-  left: 30px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 99;
-}
-
-.carousel-section-wrapper .carousel-control:hover {
-  background: #fff;
-  color: #3763EB;
-}
-
-.carousel-section-wrapper .carousel-control.carousel-control-next {
-  left: auto;
-  right: 30px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .carousel-section-wrapper .carousel-control {
-    top: auto;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    bottom: 80px;
-    margin: auto;
-  }
-
-  .carousel-section-wrapper .carousel-control.carousel-control-prev {
-    left: 42%;
-  }
-
-  .carousel-section-wrapper .carousel-control.carousel-control-next {
-    left: 10%;
-  }
-}
-
-@media (max-width: 767px) {
-  .carousel-section-wrapper .carousel-control {
-    top: auto;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    bottom: 80px;
-    margin: auto;
-  }
-
-  .carousel-section-wrapper .carousel-control.carousel-control-prev {
-    left: 37%;
-  }
-
-  .carousel-section-wrapper .carousel-control.carousel-control-next {
-    left: 23%;
-  }
-}
-
-.carousel-section-wrapper .carousel-control span {
-  background: none;
-}
-
+/* Service Number Badge */
 .service-number {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 30px;
   font-size: 4rem;
   font-weight: 800;
   color: color-mix(in srgb, #fff, transparent 15%);
   line-height: 1;
-  opacity: 0.3;
+  opacity: 0.2;
   z-index: 1;
 }
+
+/* Service Category */
+.service-category {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  animation: fadeInDown 0.8s ease 0.2s backwards;
+}
+
+/* Main Heading */
+.slide-heading {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 0.8s ease 0.4s backwards;
+}
+
+/* Description */
+.slide-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 700px;
+  opacity: 0.95;
+  animation: fadeInUp 0.8s ease 0.6s backwards;
+}
+
+/* Key Features */
+.slide-features {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.8s ease 0.8s backwards;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.feature-item i {
+  font-size: 24px;
+  color: #ff3409;
+}
+
+.feature-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* CTA Buttons */
+.slide-buttons {
+  display: flex;
+  gap: 20px;
+  animation: fadeInUp 0.8s ease 1s backwards;
+}
+
+.btn {
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+}
+
+/* Background Images */
+.bg-development {
+  background: linear-gradient(135deg, #599bffd5 0%, #5465fda9 100%),
+    url('/assets/img/carousel/dev.webp') center/cover;
+}
+
+.bg-digital-marketing {
+  background: linear-gradient(94.3deg, rgb(132, 0, 255) 10.9%, rgba(139, 0, 253, 0.404) 87.1%),
+    url('/assets/img/carousel/digital-market.webp') center/cover;
+}
+
+.bg-bpo {
+  background: linear-gradient(135deg, #0F2027 0%, #203a436e 50%, #2c53645e 100%),
+    url('/assets/img/carousel/bpo.webp') center/cover;
+}
+
+.bg-recruitment {
+  background: linear-gradient(180.8deg, rgba(22, 20, 114, 0.438) 6.9%, rgba(2, 6, 252, 0.281) 73.2%),
+    url('/assets/img/carousel/recruitment.webp') center/cover;
+}
+
+.bg-consulting {
+  background: linear-gradient(135deg, #cbd9ff71 0%, #293e5a67 100%),
+    url('/assets/img/carousel/consulting.webp') center/cover;
+}
+
+.bg-training {
+  background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%),
+    url('/assets/img/carousel/training.webp') center/cover;
+}
+
+
+/* Navigation Arrows */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.carousel-nav:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-nav i {
+  color: white;
+  font-size: 24px;
+}
+
+.nav-prev {
+  left: 40px;
+}
+
+.nav-next {
+  right: 40px;
+}
+
+/* Dots Indicator */
+.carousel-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: white;
+  width: 40px;
+  border-radius: 6px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .slide-heading {
+    font-size: 56px;
+  }
+
+  .slide-description {
+    font-size: 18px;
+  }
+
+  .slide-features {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    height: 100vh;
+  }
+
+  .slide-content {
+    padding: 0 30px;
+  }
+
+  .slide-heading {
+    font-size: 42px;
+  }
+
+  .slide-description {
+    font-size: 16px;
+  }
+
+  .slide-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .nav-prev {
+    left: 20px;
+  }
+
+  .nav-next {
+    right: 20px;
+  }
+
+  .carousel-nav {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-heading {
+    font-size: 32px;
+  }
+
+  .service-category {
+    font-size: 16px;
+  }
+
+  .slide-description {
+    font-size: 15px;
+  }
+}
+
 
 
 /*--------------------------------------------------------------
    Slider Buttons
 --------------------------------------------------------------*/
+/*
 .slider-btn {
   background: #34ccff none repeat scroll 0 0;
   border-radius: 6px;
@@ -2058,6 +2267,11 @@ a.slider-btn.gray-btn:hover {
   background: #ff3409 !important;
   box-shadow: none;
 }
+*/
+
+/*===========================
+    03. Client Logo CSS
+===========================*/
 
 .client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo {
   padding: 10px;
@@ -2080,6 +2294,9 @@ a.slider-btn.gray-btn:hover {
   opacity: 1;
 }
 
+/*===========================
+    BOX CSS
+===========================*/
 
 .box-style {
   padding: 40px 30px;
@@ -3575,9 +3792,6 @@ a.slider-btn.gray-btn:hover {
     grid-template-columns: 1fr;
   }
 }
-
-
-
 
 /*===========================
   Feature conetnt CSS  
