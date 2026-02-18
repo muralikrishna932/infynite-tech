@@ -1,20 +1,3 @@
-/* ===========================
-Index Of css
-
-01. Common CSS
-02. Header CSS
-03. About CSS
-05. Service CSS
-06. Process CSS
-07. Pricing CSS
-08. Testimonial CSS
-09. Team CSS
-10. Subscribe CSS
-11. Blog CSS
-12. Contact CSS
-13. Footer CSS
-
-========================== */
 /*===========================
     01. Common CSS
 ===========================*/
@@ -1647,8 +1630,15 @@ p {
 .navbar-nav .nav-item a.active {
   color: #3763EB;
   font-weight: bold;
-  border-bottom: 3px solid #ff3409;
   padding-bottom: 5px;
+}
+.navbar-nav .nav-item a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background: #ff3409;
 }
 
 .navbar-nav .nav-item a.dd-menu {
@@ -1931,13 +1921,20 @@ p {
 
 /* Service Category */
 .service-category {
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(232,93,47,0.15);
+  border: 1px solid #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
   font-weight: 600;
-  margin-bottom: 20px;
-  opacity: 0.9;
-  animation: fadeInDown 0.8s ease 0.2s backwards;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 2rem;
+  animation: fadeUp 0.7s ease both;
 }
 
 /* Main Heading */
@@ -2220,79 +2217,74 @@ p {
   }
 }
 
-
-
-/*--------------------------------------------------------------
-   Slider Buttons
---------------------------------------------------------------*/
-/*
-.slider-btn {
-  background: #34ccff none repeat scroll 0 0;
-  border-radius: 6px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1;
-  margin-bottom: 0;
-  padding: 15px 38px;
-  text-align: center;
-  text-transform: capitalize;
-  touch-action: manipulation;
-  transition: all 0.4s ease-out 0s;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-.slider-btn.red-btn {
-  background: #ff3409 !important;
-}
-
-a.slider-btn.red-btn:hover {
-  color: #001d67;
-  background: #cee2ff !important;
-  box-shadow: none;
-}
-
-.slider-btn.gray-btn {
-  color: #001d67;
-  box-shadow: none;
-  background: #cee2ff !important;
-}
-
-a.slider-btn.gray-btn:hover {
-  color: #ffffff;
-  background: #ff3409 !important;
-  box-shadow: none;
-}
-*/
-
 /*===========================
-    03. Client Logo CSS
-===========================*/
-
-.client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo {
-  padding: 10px;
-  text-align: center;
-  margin: auto;
+    Tech Stack CSS
+  ===========================*/
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 0rem;
+  width: 1417px;
+  margin-left: 35px;
 }
 
-.client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo img {
-  max-width: 220px;
-  width: 100%;
-  opacity: .3;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+.tech-cat h4 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.35);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
 }
 
-.client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo img:hover {
-  opacity: 1;
+.tech-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.7rem 1rem;
+  background: rgb(55, 59, 84);
+  color: #fff;
+  border: 1px solid rgb(253, 0, 0);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: border-color .2s, background .2s, color .2s;
+  cursor: default;
+}
+
+.tech-item:hover {
+  border-color: rgba(74, 200, 250, 0.4);
+  background: rgba(0, 133, 250, 0.04);
+  color: rgb(5, 5, 5);
+}
+
+.tech-emoji {
+  font-size: 1rem;
+}
+
+@media (max-width:1100px) {
+  .tech-categories {
+    grid-template-columns: 1fr 1fr;
+    width: 370px;
+  }
+}
+
+@media (max-width:640px) {
+  .tech-categories {
+    grid-template-columns: 1fr;
+    width: 370px;
+  }
+}
+
 
 /*===========================
     BOX CSS
@@ -2369,10 +2361,9 @@ a.slider-btn.gray-btn:hover {
 }
 
 /*===========================
-    04. About CSS 
+    About CSS 
 ===========================*/
 .about-section {
-  background: #F4FAE4;
   padding: 120px 0;
   position: relative;
 }
@@ -2634,8 +2625,8 @@ a.slider-btn.gray-btn:hover {
 }
 
 /*===========================
-    05. Service CSS 
-===========================*/
+    Service CSS 
+  ===========================*/
 .service-section .service-box-style-2 {
   padding: 0;
   text-align: center;
@@ -2751,7 +2742,7 @@ a.slider-btn.gray-btn:hover {
 
 
 /*===========================
-    10. Subscribe CSS 
+    Subscribe CSS 
 ===========================*/
 .subscribe-section {
   position: relative;
@@ -2806,7 +2797,7 @@ a.slider-btn.gray-btn:hover {
 }
 
 /*===========================
-    12. project Contact CSS 
+    project Contact CSS 
 ===========================*/
 .contact-section {
   position: relative;
@@ -2970,7 +2961,7 @@ a.slider-btn.gray-btn:hover {
 }
 
 /*===========================
-    13. Footer CSS 
+    Footer CSS 
 ===========================*/
 .footer {
   position: relative;
@@ -3502,7 +3493,7 @@ a.slider-btn.gray-btn:hover {
 }
 
 .contact .php-email-form {
-  background-color: #ffffff;
+  background-color: #cae2ee;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 30px;
@@ -3853,6 +3844,5 @@ a.slider-btn.gray-btn:hover {
     grid-area: bar;
     height: 2px;
     background-image: linear-gradient(90deg, var(--grad));
-    /*     margin-inline: -1.5rem; */
   }
 }
