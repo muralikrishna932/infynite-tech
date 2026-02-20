@@ -1858,7 +1858,6 @@ p {
 /*===========================
     Caraousel CSS
   ===========================*/
-/* Carousel Container */
 .carousel-wrapper {
   position: relative;
   width: 100%;
@@ -1910,7 +1909,7 @@ p {
 /* Service Number Badge */
 .service-number {
   position: absolute;
-  top: 20px;
+  top: 0px;
   right: 30px;
   font-size: 4rem;
   font-weight: 800;
@@ -2004,7 +2003,6 @@ p {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
 }
@@ -2027,35 +2025,40 @@ p {
   transform: translateY(-3px);
 }
 
-/* Background Images */
 .bg-digital-transformation {
-  background: linear-gradient(94.3deg, rgb(2, 69, 255) 10.9%, rgba(139, 0, 253, 0.404) 87.1%),
-    url('/assets/img/carousel/bpo.webp') center/cover;
-}
-
-.bg-development {
-  background: linear-gradient(135deg, #599bffd5 0%, #5465fda9 100%),
-    url('/assets/img/carousel/dev.webp') center/cover;
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 51, 102, 1) 0%, rgba(0, 102, 204, 1) 49.5%, rgba(0, 191, 255, 1) 90%);
+  /*background: linear-gradient(94.3deg, rgb(2, 69, 255) 10.9%, rgba(139, 0, 253, 0.404) 87.1%),
+    url('/assets/img/carousel/bpo.webp') center/cover; */
 }
 
 .bg-digital-marketing {
-  background: linear-gradient(94.3deg, rgb(104, 181, 252) 10.9%, rgba(139, 0, 253, 0.404) 87.1%),
-    url('/assets/img/carousel/digital-market.webp') center/cover;
-}
-
-.bg-bpo {
-  background: linear-gradient(135deg, #0F2027 0%, #203a436e 50%, #2c53645e 100%),
-    url('/assets/img/carousel/bpo.webp') center/cover;
-}
-
-.bg-recruitment {
-  background: linear-gradient(180.8deg, rgba(22, 20, 114, 0.438) 6.9%, rgba(2, 6, 252, 0.281) 73.2%),
-    url('/assets/img/carousel/recruitment.webp') center/cover;
+  background: radial-gradient(circle farthest-corner at 50.3% 47.3%, rgba(113, 42, 92, 1) 0.1%, rgba(40, 25, 46, 1) 90%);
+  /*background: linear-gradient(94.3deg, rgb(104, 181, 252) 10.9%, rgba(139, 0, 253, 0.404) 87.1%),
+    url('/assets/img/carousel/digital-market.webp') center/cover; */
 }
 
 .bg-consulting {
-  background: linear-gradient(135deg, #cbd9ff71 0%, #293e5a67 100%),
-    url('/assets/img/carousel/consulting.webp') center/cover;
+  background: linear-gradient(171.8deg, rgba(5, 111, 146, 1) 13.5%, rgba(6, 57, 84, 1) 78.6%);
+  /*background: linear-gradient(135deg, #cbd9ff71 0%, #293e5a67 100%),
+    url('/assets/img/carousel/consulting.webp') center/cover;*/
+}
+
+.bg-bpo {
+  background: radial-gradient(circle farthest-corner at 96.1% 7.2%, rgba(9, 178, 62, 1) 0%, rgba(19, 19, 19, 1) 100.2%);
+  /*background: linear-gradient(135deg, #0F2027 0%, #203a436e 50%, #2c53645e 100%),
+    url('/assets/img/carousel/bpo.webp') center/cover;*/
+}
+
+.bg-recruitment {
+  background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+  /*background: linear-gradient(180.8deg, rgba(22, 20, 114, 0.438) 6.9%, rgba(2, 6, 252, 0.281) 73.2%),
+    url('/assets/img/carousel/recruitment.webp') center/cover;*/
+}
+
+.bg-development {
+  background: linear-gradient(135deg, rgba(5, 84, 94, 1) 16%, rgba(5, 84, 94, 1) 91.1%);
+  /*background: linear-gradient(135deg, #599bffd5 0%, #5465fda9 100%),
+    url('/assets/img/carousel/dev.webp') center/cover;*/
 }
 
 .bg-training {
@@ -3502,180 +3505,205 @@ p {
 /* PHP Email Form Messages
 ------------------------------*/
 
-    .panel-right {
-      padding: 56px 48px;
-    }
+.panel-right {
+  padding: 56px 48px;
+}
 
-    .form-header {
-      margin-bottom: 36px;
-    }
+.form-header {
+  margin-bottom: 36px;
+}
 
-    .contact-form{
-    background: #EFF2F9;
-    padding: 40px;
-    }
+.contact-form {
+  background: #EFF2F9;
+  padding: 40px;
+}
 
-    .form-header h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.6rem;
-      font-weight: 400;
-    }
+.form-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
 
-    .form-header p {
-      font-size: 0.83rem;
-      color: var(--muted);
-      margin-top: 6px;
-    }
+.form-header p {
+  font-size: 0.83rem;
+  color: var(--muted);
+  margin-top: 6px;
+}
 
-    .divider {
-      width: 40px; height: 2px;
-      background: var(--accent);
-      margin: 14px 0;
-    }
+.divider {
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  margin: 14px 0;
+}
 
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
 
-    .form-group {
-      margin-bottom: 22px;
-    }
+.form-group {
+  margin-bottom: 22px;
+}
 
-    label {
-      display: block;
-      font-size: 0.80rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #000;
-      margin-bottom: 8px;
-    }
+label {
+  display: block;
+  font-size: 0.80rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 8px;
+}
 
-    input, textarea, select {
-      width: 100%;
-      font-size: 0.9rem;
-      color: #000;
-      border: 1px solid #d4cfc8;
-      border-bottom: 1.5px solid #d4cfc8;
-      padding: 10px 8px;
-      outline: none;
-      transition: border-color 0.25s;
-    }
+input,
+textarea,
+select {
+  width: 100%;
+  font-size: 0.9rem;
+  color: #000;
+  border: 1px solid #d4cfc8;
+  border-bottom: 1.5px solid #d4cfc8;
+  padding: 10px 8px;
+  outline: none;
+  transition: border-color 0.25s;
+}
 
-    input:focus, textarea:focus, select:focus {
-      border-color: #ff3409;
-    }
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff3409;
+}
 
-    input::placeholder, textarea::placeholder {
-      color: #c5c1ba;
-    }
+input::placeholder,
+textarea::placeholder {
+  color: #c5c1ba;
+}
 
-    textarea {
-      resize: none;
-      height: 90px;
-    }
+textarea {
+  resize: none;
+  height: 90px;
+}
 
-    /* CAPTCHA */
-    .captcha-box {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 14px 16px;
-      background: #f5f1eb;
-      border: 1.5px solid #d4cfc8;
-      margin-bottom: 28px;
-    }
+/* CAPTCHA */
+.captcha-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  background: #f5f1eb;
+  border: 1.5px solid #d4cfc8;
+  margin-bottom: 28px;
+}
 
-    .captcha-question {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #1a1a18;
-      white-space: nowrap;
-    }
+.captcha-question {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a18;
+  white-space: nowrap;
+}
 
-    .captcha-eq {
-      color: #8c8880;
-      font-size: 1.2rem;
-    }
+.captcha-eq {
+  color: #8c8880;
+  font-size: 1.2rem;
+}
 
-    .captcha-input {
-      border: none;
-      border-bottom: 1.5px solid #d4cfc8 !important;
-      width: 60px;
-      text-align: center;
-      font-size: 1rem;
-      font-weight: 500;
-      padding: 4px 0 !important;
-    }
+.captcha-input {
+  border: none;
+  border-bottom: 1.5px solid #d4cfc8 !important;
+  width: 60px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 4px 0 !important;
+}
 
-    .captcha-label {
-      margin-left: auto;
-      font-size: 0.68rem;
-      color: #8c8880;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
+.captcha-label {
+  margin-left: auto;
+  font-size: 0.68rem;
+  color: #8c8880;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
 
-    .btn-submit {
-      width: 100%;
-      background: #1a1a18;
-      color: #ffffff;
-      border: none;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      padding: 16px;
-      cursor: pointer;
-      transition: background 0.25s, transform 0.15s;
-      position: relative;
-      overflow: hidden;
-    }
+.btn-submit {
+  width: 100%;
+  background: #1a1a18;
+  color: #ffffff;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 16px;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.15s;
+  position: relative;
+  overflow: hidden;
+}
 
-    .btn-submit::after {
-      content: '→';
-      margin-left: 10px;
-      transition: transform 0.2s;
-      display: inline-block;
-    }
+.btn-submit::after {
+  content: '→';
+  margin-left: 10px;
+  transition: transform 0.2s;
+  display: inline-block;
+}
 
-    .btn-submit:hover { background: #ff3409; }
-    .btn-submit:hover::after { transform: translateX(4px); }
-    .btn-submit:active { transform: scale(0.99); }
+.btn-submit:hover {
+  background: #ff3409;
+}
 
-    /* Alert messages */
-    .alert {
-      padding: 12px 16px;
-      font-size: 0.83rem;
-      margin-bottom: 20px;
-      border-left: 3px solid;
-      display: none;
-    }
+.btn-submit:hover::after {
+  transform: translateX(4px);
+}
 
-    .alert.success {
-      border-color: #4caf6e;
-      background: #f0faf3;
-      color: #2d6e44;
-      display: block;
-    }
+.btn-submit:active {
+  transform: scale(0.99);
+}
 
-    .alert.error {
-      border-color: #c8502a;
-      background: #fdf2ef;
-      color: #903820;
-      display: block;
-    }
+/* Alert messages */
+.alert {
+  padding: 12px 16px;
+  font-size: 0.83rem;
+  margin-bottom: 20px;
+  border-left: 3px solid;
+  display: none;
+}
 
-    @media (max-width: 680px) {
-      .page-wrapper { grid-template-columns: 1fr; }
-      .panel-left { padding: 40px 32px; }
-      .panel-right { padding: 40px 32px; }
-      .form-row { grid-template-columns: 1fr; }
-    }
+.alert.success {
+  border-color: #4caf6e;
+  background: #f0faf3;
+  color: #2d6e44;
+  display: block;
+}
+
+.alert.error {
+  border-color: #c8502a;
+  background: #fdf2ef;
+  color: #903820;
+  display: block;
+}
+
+@media (max-width: 680px) {
+  .page-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-left {
+    padding: 40px 32px;
+  }
+
+  .panel-right {
+    padding: 40px 32px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
 
 /*===========================
   Testimonial CSS 
@@ -3880,7 +3908,6 @@ p {
 .card {
   --grad: red, blue;
   padding: 2.5rem;
-  /*background-image: linear-gradient(to bottom left, #e0e4e5, #f2f6f9);*/
   background: #E4F0FA;
   border-radius: 2rem;
   gap: 1.5rem;
@@ -4059,6 +4086,7 @@ p {
   font-size: 15px;
   color: #666;
 }
+
 .state-section {
   margin-bottom: 50px;
 }
