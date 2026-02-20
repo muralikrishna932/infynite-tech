@@ -245,8 +245,7 @@
 /*=====================================
 	Contact Form Validation and CAPTCHA
 =======================================*/
-
-// Generate math CAPTCHA on load
+// ── CAPTCHA generator ──────────────────────────────────────────────
   function generateCaptcha() {
     const a = Math.floor(Math.random() * 12) + 1;
     const b = Math.floor(Math.random() * 12) + 1;
@@ -256,7 +255,6 @@
     if (opIdx === 0) answer = a + b;
     else if (opIdx === 1) answer = a - b;
     else answer = a * b;
-
     document.getElementById('captchaQ').textContent = `${a} ${ops[opIdx]} ${b}`;
     document.getElementById('captchaExpected').value = answer;
     document.getElementById('captchaAnswer').value = '';
@@ -264,51 +262,91 @@
 
   generateCaptcha();
 
-  // Show PHP redirect messages (success / error)
-  (function() {
-    const params = new URLSearchParams(window.location.search);
-    const status = params.get('status');
-    const msg    = params.get('msg');
-    if (status && msg) {
-      const alertEl = document.getElementById('alert');
-      alertEl.className = `alert ${status}`;
-      alertEl.textContent = msg;
-      window.history.replaceState({}, '', window.location.pathname);
-    }
-  })();
+  // ── Alert helper ───────────────────────────────────────────────────
+  function showAlert(type, message) {
+    const alertEl = document.getElementById('alert');
+    alertEl.className = '';
+    alertEl.textContent = '';
+    void alertEl.offsetWidth; // reflow to re-trigger animation
+    alertEl.className = 'alert ' + type;
+    alertEl.textContent = message;
+    alertEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
 
-  // Client-side validation + CAPTCHA check before submit
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    const fields = ['first_name', 'last_name', 'email', 'subject', 'message'];
+  function hideAlert() {
+    const alertEl = document.getElementById('alert');
+    alertEl.className = 'alert';
+    alertEl.textContent = '';
+  }
+
+  // ── AJAX form submission ───────────────────────────────────────────
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    hideAlert();
+
+    // 1. Required field validation
+    const required = ['first_name', 'last_name', 'email', 'subject', 'message'];
     let valid = true;
-
-    fields.forEach(id => {
+    required.forEach(id => {
       const el = document.getElementById(id);
-      if (!el.value.trim()) { el.style.borderColor = '#ff3409'; valid = false; }
-      else el.style.borderColor = '';
+      if (!el.value.trim()) {
+        el.style.borderColor = '#c8502a';
+        valid = false;
+      } else {
+        el.style.borderColor = '';
+      }
     });
 
+    if (!valid) {
+      showAlert('error', '⚠  Please fill in all required fields.');
+      return;
+    }
+
+    // 2. Email format
+    const emailVal = document.getElementById('email').value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
+      showAlert('error', '⚠  Please enter a valid email address.');
+      document.getElementById('email').style.borderColor = '#c8502a';
+      return;
+    }
+
+    // 3. CAPTCHA check
     const expected = parseInt(document.getElementById('captchaExpected').value);
     const given    = parseInt(document.getElementById('captchaAnswer').value);
-
     if (isNaN(given) || given !== expected) {
-      const alertEl = document.getElementById('alert');
-      alertEl.className = 'alert error';
-      alertEl.textContent = 'Incorrect CAPTCHA answer. Please try again.';
+      showAlert('error', '⚠  Incorrect CAPTCHA answer. Please try again.');
       generateCaptcha();
-      e.preventDefault();
-      valid = false;
+      return;
     }
 
-    if (!valid) {
-      const alertEl = document.getElementById('alert');
-      if (alertEl.className !== 'alert error') {
-        alertEl.className = 'alert error';
-        alertEl.textContent = 'Please fill in all required fields.';
+    // 4. Send via fetch (AJAX)
+    const btn = document.querySelector('.btn-submit');
+    btn.disabled = true;
+    btn.innerHTML = 'Sending&hellip;';
+
+    try {
+      const response = await fetch('contact_process.php', {
+        method: 'POST',
+        body: new FormData(this)
+      });
+      const result = await response.json();
+
+      if (result.status === 'success') {
+        showAlert('success', '✓  ' + result.message);
+        this.reset();
+        generateCaptcha();
+      } else {
+        showAlert('error', '⚠  ' + result.message);
+        generateCaptcha();
       }
-      e.preventDefault();
+    } catch (err) {
+      showAlert('error', '⚠  Network error. Please check your connection and try again.');
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = 'Send Message';
     }
   });
+
 	
 })();
 
