@@ -241,6 +241,74 @@
     // Initialize
     updateItemsPerView();
 });
+
+/*=====================================
+	Contact Form Validation and CAPTCHA
+=======================================*/
+
+// Generate math CAPTCHA on load
+  function generateCaptcha() {
+    const a = Math.floor(Math.random() * 12) + 1;
+    const b = Math.floor(Math.random() * 12) + 1;
+    const ops = ['+', '−', '×'];
+    const opIdx = Math.floor(Math.random() * ops.length);
+    let answer;
+    if (opIdx === 0) answer = a + b;
+    else if (opIdx === 1) answer = a - b;
+    else answer = a * b;
+
+    document.getElementById('captchaQ').textContent = `${a} ${ops[opIdx]} ${b}`;
+    document.getElementById('captchaExpected').value = answer;
+    document.getElementById('captchaAnswer').value = '';
+  }
+
+  generateCaptcha();
+
+  // Show PHP redirect messages (success / error)
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    const status = params.get('status');
+    const msg    = params.get('msg');
+    if (status && msg) {
+      const alertEl = document.getElementById('alert');
+      alertEl.className = `alert ${status}`;
+      alertEl.textContent = msg;
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+  })();
+
+  // Client-side validation + CAPTCHA check before submit
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    const fields = ['first_name', 'last_name', 'email', 'subject', 'message'];
+    let valid = true;
+
+    fields.forEach(id => {
+      const el = document.getElementById(id);
+      if (!el.value.trim()) { el.style.borderColor = '#ff3409'; valid = false; }
+      else el.style.borderColor = '';
+    });
+
+    const expected = parseInt(document.getElementById('captchaExpected').value);
+    const given    = parseInt(document.getElementById('captchaAnswer').value);
+
+    if (isNaN(given) || given !== expected) {
+      const alertEl = document.getElementById('alert');
+      alertEl.className = 'alert error';
+      alertEl.textContent = 'Incorrect CAPTCHA answer. Please try again.';
+      generateCaptcha();
+      e.preventDefault();
+      valid = false;
+    }
+
+    if (!valid) {
+      const alertEl = document.getElementById('alert');
+      if (alertEl.className !== 'alert error') {
+        alertEl.className = 'alert error';
+        alertEl.textContent = 'Please fill in all required fields.';
+      }
+      e.preventDefault();
+    }
+  });
 	
 })();
 
