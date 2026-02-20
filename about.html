@@ -132,7 +132,7 @@
                         <div class="container">
                         <div class="row d-flex justify-content-center text-center">
                                 <div class="col-lg-8" id="services">
-                                    <h2 class="wow fadeInUp mb-10" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">About Us</h2>
+                                    <h1 class="wow fadeInUp mb-10" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">About Us</h1>
                                     <p class="wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
                                     <i>We provide comprehensive various services designed to streamline your operations and support your business growth.</i></p>
                                 </div>
@@ -159,10 +159,10 @@
                                 <div class="col-12">
                                     <div class="specialty-navigation">
                                         <div class="nav nav-pills d-flex" id="specialty-tabs" role="tablist" data-aos="fade-up" data-aos-delay="400">
-                                            <a class="department-tab active" onclick="openCity(event, 'about')" href="#">About Us</a>
-                                            <a class="department-tab" onclick="openCity(event, 'vision')" href="#">Vision & Mission</a>
-                                            <a class="department-tab" onclick="openCity(event, 'howWeWork')" href="#">How We Work</a>
-                                            <a class="department-tab" onclick="openCity(event, 'leaderShip')" href="#">Team</a>
+                                            <a class="service-tab active" onclick="openCity(event, 'about')" href="#">About Us</a>
+                                            <a class="service-tab" onclick="openCity(event, 'vision')" href="#">Vision & Mission</a>
+                                            <a class="service-tab" onclick="openCity(event, 'howWeWork')" href="#">How We Work</a>
+                                            <a class="service-tab" onclick="openCity(event, 'leaderShip')" href="#">Team</a>
                                         </div>
                                     </div>
                                 </div>
@@ -338,7 +338,8 @@
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="mx-auto">
-                                                        <div class="section-title">
+                                                        <div class="section-title text-center">
+                                                            <div class="section-heading mb-30">How <font color="#f00">WE WORK</font></div>
                                                             <h4 class="wow fadeInUp" data-wow-delay=".6s">We believe great technology is powered by great people.
                                                                 Our unique advantage lies in seamlessly blending our service and staffing expertise to provide 
                                                                 a unified strategy.
@@ -624,7 +625,7 @@
                     for (i = 0; i < x.length; i++) {
                         x[i].style.display = "none";
                     }
-                    tablinks = document.getElementsByClassName("department-tab");
+                    tablinks = document.getElementsByClassName("service-tab");
                     for (i = 0; i < tablinks.length; i++) {
                         tablinks[i].className = tablinks[i].className.replace("active", "");
                     }

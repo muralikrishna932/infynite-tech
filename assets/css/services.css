@@ -1503,7 +1503,7 @@
 }
 
 .page-title .heading h1 {
-	font-size: 38px;
+	font-size: 65px;
 	font-weight: 700;
 }
 
@@ -1570,7 +1570,7 @@
 	}
 }
 
-.departments-tabs .specialty-navigation .department-tab {
+.departments-tabs .specialty-navigation .service-tab {
 	background-color: color-mix(in srgb, #3c4049, transparent 95%);
 	border: none;
 	border-radius: 0;
@@ -1585,31 +1585,31 @@
 }
 
 @media (max-width: 992px) {
-	.departments-tabs .specialty-navigation .department-tab {
+	.departments-tabs .specialty-navigation .service-tab {
 		font-size: 1rem;
 		padding: 1.5rem 1rem;
 	}
 }
 
 @media (max-width: 768px) {
-	.departments-tabs .specialty-navigation .department-tab {
+	.departments-tabs .specialty-navigation .service-tab {
 		width: 100%;
 		margin-bottom: 0;
 	}
 }
 
-.departments-tabs .specialty-navigation .department-tab:hover {
+.departments-tabs .specialty-navigation .service-tab:hover {
 	background-color: color-mix(in srgb, #ff3409, transparent 10%);
 	color: #ffffff;
 	transform: translateY(-2px);
 }
 
-.departments-tabs .specialty-navigation .department-tab.active {
-	background-color: #175cdd;
+.departments-tabs .specialty-navigation .service-tab.active {
+	background-color: #004a8c;
 	color: #ffffff;
 }
 
-.departments-tabs .specialty-navigation .department-tab.active::after {
+.departments-tabs .specialty-navigation .service-tab.active::after {
 	content: "";
 	position: absolute;
 	bottom: -12px;
@@ -1623,7 +1623,7 @@
 }
 
 @media (max-width: 768px) {
-	.departments-tabs .specialty-navigation .department-tab.active::after {
+	.departments-tabs .specialty-navigation .service-tab.active::after {
 		display: none;
 	}
 }
