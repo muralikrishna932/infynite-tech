@@ -3498,57 +3498,6 @@ p {
   font-size: 15px;
 }
 
-/*
-.contact .php-email-form {
-  background-color: #cae2ee;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  padding: 30px;
-  border-radius: 15px;
-}
-
-@media (max-width: 575px) {
-  .contact .php-email-form {
-    padding: 20px;
-  }
-}
-
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 20px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: #051441;
-  background-color: #ffffff;
-  border-color: color-mix(in srgb, #444444, transparent 80%);
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: #e03a3c;
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, #051441, transparent 70%);
-}
-
-.contact .php-email-form button[type=submit] {
-  color: #ffffff;
-  background: #e03a3c;
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, #004a8c, transparent 20%);
-} */
-
 /* ------------------------------
 /* PHP Email Form Messages
 ------------------------------*/
@@ -3727,58 +3676,6 @@ p {
       .panel-right { padding: 40px 32px; }
       .form-row { grid-template-columns: 1fr; }
     }
-
-
-/*.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: #ffffff;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #e03a3c;
-  border-top-color: #ffffff;
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-*/
 
 /*===========================
   Testimonial CSS 
@@ -4064,7 +3961,7 @@ p {
 }
 
 .panel-group>.panel:first-child .panel-heading {
-  border-radius: 4px 4px 0 0;
+  border-radius: 8px 8px 8px 8px;
 }
 
 .panel-group .panel {
@@ -4098,6 +3995,7 @@ p {
 
 .panel:last-child .panel-body {
   border-radius: 0 0 4px 4px;
+  margin-left: 10px;
 }
 
 .panel:last-child .panel-heading {
@@ -4189,6 +4087,7 @@ p {
   padding: 20px;
   transition: all 0.2s ease;
   width: 315px;
+  border-radius: 15px;
 }
 
 .address-card:hover {
@@ -4201,7 +4100,7 @@ p {
   margin-bottom: 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid #e5e5e5;
-  background: lightskyblue;
+  border-radius: 7px;
 }
 
 .city {
@@ -4234,7 +4133,7 @@ p {
 
 .label {
   font-size: 10px;
-  color: #999;
+  color: #29365c;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 3px;
@@ -4242,23 +4141,23 @@ p {
 }
 
 .value {
-  color: #1a1a1a;
+  color: #29365c;
 }
 
 .value a {
-  color: #1a1a1a;
+  color: #29365c;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
 }
 
 .value a:hover {
-  border-bottom-color: #000;
+  border-bottom-color: #29365c;
 }
 
 .country {
   font-size: 15px;
-  color: #000;
+  color: #29365c;
   position: absolute;
   top: 20px;
   right: 25px;
