@@ -300,8 +300,6 @@ p {
   }
 }
 
-
-
 .portfolio-section-title {
   color: white;
   margin-bottom: 50px;
@@ -337,23 +335,12 @@ p {
 }
 
 
-.banner-title h2 {
-  font-size: clamp(3rem, 8vw, 7rem);
-  color: #010570;
-  font-weight: 650;
-}
-
-.banner2-title h2 {
-  font-size: 45px;
-  color: #010570;
-  font-weight: 650;
-}
-
 .section-title h2 {
   line-height: 55px;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #051441
+  color: #051441;
+  
 }
 
 @media (max-width: 767px) {
@@ -1939,12 +1926,11 @@ p {
 
 /* Main Heading */
 .slide-heading {
-  font-size: 65px;
-  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 25px;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  animation: fadeInUp 0.8s ease 0.4s backwards;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
 }
 
 /* Description */
@@ -1977,8 +1963,8 @@ p {
 }
 
 .feature-text {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 /* CTA Buttons */
@@ -2026,7 +2012,7 @@ p {
 }
 
 .bg-digital-transformation {
-  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 51, 102, 1) 0%, rgba(0, 102, 204, 1) 49.5%, rgba(0, 191, 255, 1) 90%);
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgb(1, 59, 117) 0%, rgb(6, 64, 122) 49.5%, rgba(0, 191, 255, 1) 90%);
   /*background: linear-gradient(94.3deg, rgb(2, 69, 255) 10.9%, rgba(139, 0, 253, 0.404) 87.1%),
     url('/assets/img/carousel/bpo.webp') center/cover; */
 }
@@ -2056,7 +2042,7 @@ p {
 }
 
 .bg-development {
-  background: linear-gradient(135deg, rgba(5, 84, 94, 1) 16%, rgba(5, 84, 94, 1) 91.1%);
+  background: linear-gradient(135deg, rgb(91, 5, 94) 16%, rgba(5, 84, 94, 1) 91.1%);
   /*background: linear-gradient(135deg, #599bffd5 0%, #5465fda9 100%),
     url('/assets/img/carousel/dev.webp') center/cover;*/
 }
@@ -2182,7 +2168,7 @@ p {
   }
 
   .slide-heading {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .slide-description {
@@ -2214,7 +2200,7 @@ p {
 
 @media (max-width: 480px) {
   .slide-heading {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .service-category {
