@@ -3367,7 +3367,7 @@ p {
   Header Top CSS
 ===========================*/
 .header-top-section {
-  background-color: rgb(0, 74, 140);
+  background: #dd0a35;
   padding: 10px 0;
   position: relative;
   z-index: 99;
