@@ -1227,15 +1227,7 @@
 
 .contact-icon {
 	font-size: 1.5rem;
-}
-
-.fa-check-circle::before {
-	content: "\f058";
-}
-
-.elementor-icon-list-icon i {
-	color: var(--e-global-color-secondary);
-	transition: color 0.3s;
+	margin-left: 65px;
 }
 
 
@@ -1671,7 +1663,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: color-mix(in srgb, #0046ecc4, transparent 0%);
+	background-color: color-mix(in srgb, #004889, transparent 0%);
 	color: #fff;
 	font-size: 2rem;
 	transition: all 0.3s ease;
@@ -1696,7 +1688,7 @@
 
 .services .services-container .service-item .service-title {
 	font-size: 1.4rem;
-	font-weight: 700;
+	font-weight: 590;
 	margin-bottom: 15px;
 	color: #ffffff;
 	position: relative;
