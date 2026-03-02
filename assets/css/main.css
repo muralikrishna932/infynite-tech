@@ -2189,6 +2189,7 @@ p {
 @media (max-width: 480px) {
   .slide-heading {
     font-size: 25px;
+    font-weight: 300;
   }
 
   .service-category {
