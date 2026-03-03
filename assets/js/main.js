@@ -123,7 +123,7 @@
 	Chatbot Configuration
 	=======================================*/
 	window.chtlConfig = { chatbotId: "4218465813" }
-
+  
 
  /*=====================================
 	Blog Slider

@@ -245,18 +245,14 @@ p {
   line-height: 45px;
   font-size: 20px;
   color: #fff;
-  border-radius: 10px;
   position: fixed;
-  bottom: 85px;
+  bottom: 20px;
   right: 15px;
   z-index: 9;
   cursor: pointer;
   animation: animation1;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  left:20px
 }
 
 @media only screen and (max-width: 767px) {
@@ -4114,13 +4110,13 @@ textarea {
 .city {
   font-size: 16px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #fff;
   margin-bottom: 4px;
 }
 
 .location {
   font-size: 12px;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -4165,7 +4161,7 @@ textarea {
 
 .country {
   font-size: 15px;
-  color: #29365c;
+  color: #fff;
   position: absolute;
   top: 20px;
   right: 25px;
