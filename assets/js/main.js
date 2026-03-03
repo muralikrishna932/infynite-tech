@@ -107,16 +107,6 @@
 		navbarToggler.classList.toggle("active");
 	}) 
 
-	/*=====================================
-	Portfolio Years Of Experiance Generator
-	=======================================*/
-	let baseYear = 2021; // Change this to when you started
-	let today = new Date();
-	let currentYear = today.getFullYear();
-	let yearsOfExperience = currentYear - baseYear;
-
-	// Update the span content
-	document.getElementById('yearsOfExperience').textContent = yearsOfExperience + '+';
 
 
 	/*=====================================
