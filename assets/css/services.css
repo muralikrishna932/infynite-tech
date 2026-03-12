@@ -1553,7 +1553,7 @@
 /* ── HERO — NAVY BLUE ── */
     :root { --navy:#0f1f3d; --navy2:#162848; --navy-border:rgba(255,255,255,0.09); }
 
-    .hero { background:var(--navy); color:var(--paper); min-height:100vh; display:grid; grid-template-columns:1fr 1fr; position:relative; overflow:hidden; }
+    .hero { background:linear-gradient( 109.6deg, rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% ); color:var(--paper); min-height:100vh; display:grid; grid-template-columns:1fr 1fr; position:relative; overflow:hidden; }
 
     /* layered background: diagonal lines + radial glow */
     .hero::after {
