@@ -130,8 +130,8 @@
                         <div class="container">
                         <div class="row d-flex justify-content-center text-center">
                                 <div class="col-lg-8" id="services">
-                                    <h1 class="wow fadeInUp mb-10" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Join Us</h1>
-                                    <h4 class="wow fadeInUp" data-wow-delay=".4s">Collaborate with the <font color="#f00">BEST</font> and leave your mark</h4>
+                                    <h1 class="wow fadeInUp mb-10 sub-page-tittle" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Collaborate With<br/>the Best &<br/>Leave Your <em>Mark</em></h1>
+                                    <p>We're not just hiring for roles — we're building a team of collaborators, problem-solvers, and future-shapers. If you're ready to do the best work of your life, you belong here.</p>
                                 </div>
                             </div>
                         </div>
@@ -147,523 +147,713 @@
                 </div>
                 <!-- End Page Title -->
 
-                <!-- Services Tabs Section -->
-                <section id="departments-tabs" class="departments-tabs section">
-                    <div class="container" data-aos="fade-up" data-aos-delay="100">
-                        <div class="medical-specialties">
-                            <div class="row">
-                                <!-- Tabs -->
-                                <div class="col-12">
-                                    <div class="specialty-navigation">
-                                        <div class="nav nav-pills d-flex" id="specialty-tabs" role="tablist" data-aos="fade-up" data-aos-delay="400">
-                                            <a class="service-tab active" onclick="openTab(event, 'career')" href="#">Career</a>
-                                            <a class="service-tab" onclick="openTab(event, 'internship')" href="#">Internship Programs</a>
-                                            <a class="service-tab" onclick="openTab(event, 'job')" href="#">Current Openings</a>
-                                        </div>
-                                    </div>
+                <!-- TAB NAV — identical to about -->
+                <div class="service-tab-nav-wrap">
+                    <div class="service-tab-nav">
+                        <button class="service-tab-btn active" onclick="switchTab('career',this)">Career</button>
+                        <button class="service-tab-btn" onclick="switchTab('internship',this)">Internship Programs</button>
+                        <button class="service-tab-btn" onclick="switchTab('openings',this)">Current Openings</button>
+                    </div>
+                </div>
+
+                <!-- ═══ TAB 1: CAREER ═══ -->
+                <div id="service-tab-career" class="service-tab-panel active">
+                    <div class="career-intro">
+                        <div class="career-intro-left fade-up d1">
+                            <div class="eyebrow">Why InfyniteTech</div>
+                            <h2>A Career That <em>Grows</em><br />As Fast As You Do</h2>
+                            <p>At InfyniteTech, we offer more than a job — we offer a launchpad. Whether you're an engineer, marketer,
+                                recruiter, or ops specialist, you'll find an environment that challenges you, supports you, and rewards
+                                the
+                                impact you create.</p>
+                            <p>We're a fast-moving team headquartered in Hyderabad with offices in Warangal, serving clients across 10+
+                                industries. Here, your ideas matter from day one.</p>
+                        </div>
+                
+                        <div class="career-intro-right fade-up d2">
+                            <div class="culture-stats">
+                                <div class="cs-cell">
+                                    <div class="cs-num">92%</div>
+                                    <div class="cs-label">Employee satisfaction rate</div>
                                 </div>
-
-                                    <!-- Tab Content -->
-                                    <section id="career" class="tabContent pt-70">
-                                    <section class="feature-section">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="mx-auto">
-                                                    <div class="section-title text-center mb-55">
-                                                        <div class="section-heading mb-30">Career @ <font color="#f00">InfyniteTech</font></div>
-                                                        <h4 class="wow fadeInUp"data-wow-delay=".4s">We offer a comprehensive and competitive benefits package designed to support
-                                                                your health, well-being, financial security, and work-life balance.</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row wow fadeInUp" data-wow-delay=".4s">
-                                                <div class="col-lg-4-whychoose col-md-6">
-                                                    <div class="feature-box box-style hover-style-1">
-                                                        <div class="box-content-style feature-content">
-                                                            <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg> Medical Benefits </h4>
-                                                            <p>We understand that your health and well-being are essential—not just to
-                                                                you,
-                                                                but to your performance and happiness at work. That’s why we offer a
-                                                                comprehensive
-                                                                Medical Benefits Program designed to support you and your family with
-                                                                quality
-                                                                healthcare coverage and wellness resources</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4-whychoose col-md-6">
-                                                    <div class="feature-box box-style hover-style-1">
-                                                        <div class="box-content-style feature-content">
-                                                            <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Performance Incentives </h4>
-                                                            <p>We believe in recognizing and rewarding hard work. To help drive
-                                                                excellence, innovation,
-                                                                and team spirit, we've launched a dynamic Employee Performance Incentive
-                                                                Program —
-                                                                designed to motivate, inspire, and celebrate the people who make our
-                                                                success possible.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4-whychoose col-md-6">
-                                                    <div class="feature-box box-style hover-style-1">
-                                                        <div class="box-content-style feature-content">
-                                                            <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Team Building </h4>
-                                                            <p>We believe that strong teams are the foundation of our success. To help
-                                                                us grow closer,
-                                                                collaborate better, and enjoy working together even more, we’re excited
-                                                                to introduce
-                                                                a series of team-building initiatives designed to inspire connection,
-                                                                creativity,
-                                                                and camaraderie across departments.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4-whychoose col-md-6">
-                                                    <div class="feature-box box-style hover-style-1">
-                                                        <div class="box-content-style feature-content">
-                                                            <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Sport Activities</h4>
-                                                            <p>We believe that staying active is a great way to boost energy, reduce
-                                                                stress, and build stronger
-                                                                connections among teams. Tha's why we're excited to offer a variety of
-                                                                employee sports
-                                                                activities — designed to keep you moving, motivated, and connected with
-                                                                your
-                                                                colleagues in a fun and friendly environment.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4-whychoose col-md-6">
-                                                    <div class="feature-box box-style hover-style-1">
-                                                        <div class="box-content-style feature-content">
-                                                            <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Continuous Learning & Skill Upgrading</h4>
-                                                            <p class="mb-10">Your potential is limitless, and our learning programs reflect that. We
-                                                                ensure you have the time
-                                                                and resources to master the next big thing.
-                                                            </p>
-                                                            <p>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                                                                    <path d="m9 11 3 3L22 4"></path>
-                                                                </svg>Professional Development Fund <br>
-                                
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                                                                    <path d="m9 11 3 3L22 4"></path>
-                                                                </svg>Certification Reimbursement Program <br>
-                                
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                                                                    <path d="m9 11 3 3L22 4"></path>
-                                                                </svg>Internal Knowledge Sharing <br>
-                                
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                                                                    <path d="m9 11 3 3L22 4"></path>
-                                                                </svg>Sponsorship for Advanced Degrees
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4-whychoose col-md-6">
-                                                    <div class="feature-box box-style hover-style-1">
-                                                        <div class="box-content-style feature-content">
-                                                            <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Competitive Compensation</h4>
-                                                            <p class="mb-10"> We recognize and reward talent with industry-leading salary packages,
-                                                                performance bonuses, and annual increments. </p>
-                                                            <p>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                                                                    <path d="m9 11 3 3L22 4"></path>
-                                                                </svg>Market-competitive base salary <br>
-                                
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                                                                    <path d="m9 11 3 3L22 4"></path>
-                                                                </svg>Quarterly performance bonuses <br>
-                                
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                                                                    <path d="m9 11 3 3L22 4"></path>
-                                                                </svg>Annual merit increases <br>
-                                
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                                                                    <path d="m9 11 3 3L22 4"></path>
-                                                                </svg>Referral bonus programs
-                                                            </p>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cta-section mb-30">
-                                            <h3>Ready to Join Us?</h3>
-                                            <p style="margin-top: 15px;" class="mb-30">Partner with our expert consultants to drive digital innovation
-                                                and business growth</p>
-                                            <a href="mailto:contact@infynitetech.com?subject=UX%Designer%Application&amp;body=UX%Designer%CV"
-                                                class="theme-btn border-btn">Send Your Cv</a>
-                                        </div>
-                                    </section>
-                                    </section>
-
-                                    <section id="internship" class="tabContent mb-30" style="display:none">
-                                        <section class="feature-section pt-70">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="mx-auto">
-                                                        <div class="section-title text-center mb-55">
-                                                            <div class="section-heading mb-30">Internship <font color="#f00">Program</font></div>
-                                                            <h4 class="wow fadeInUp"data-wow-delay=".4s">We are committed to nurturing future technology
-                                                                    leaders by offering comprehensive Internship Programs tailored for students
-                                                                    and fresh graduates in the
-                                                                    field of Information Technology, BPO Services, Staffing Services and Digital
-                                                                    Marketing.</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row wow fadeInUp" data-wow-delay=".4s">
-                                                    <div class="col-lg-4-whychoose col-md-6">
-                                                        <div class="feature-box box-style hover-style-2">
-                                                            <div class="box-content-style feature-content">
-                                                                <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg> Placement Assistance</h4>
-                                                                <p>Our dedicated support service will ensure continuous improvement of your
-                                                                    business while
-                                                                    achieving smoother operations.Top-performing interns get priority
-                                                                    consideration for
-                                                                    full-time roles within our organization or partner companies.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4-whychoose col-md-6">
-                                                        <div class="feature-box box-style hover-style-2">
-                                                            <div class="box-content-style feature-content">
-                                                                <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Career Acceleration</h4>
-                                                                <p>Fast-track your career with clear pathways to full-time roles. Interns
-                                                                    who excel often receive
-                                                                    job offers before completing their program with accelerated advancement
-                                                                    opportunities.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4-whychoose col-md-6">
-                                                        <div class="feature-box box-style hover-style-2">
-                                                            <div class="box-content-style feature-content">
-                                                                <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Hands-on Technical Exposure</h4>
-                                                                <p>Gain practical experience in software development, web design, cloud
-                                                                    computing, cybersecurity,
-                                                                    data analysis, AI/ML, and more.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4-whychoose col-md-6">
-                                                        <div class="feature-box box-style hover-style-2">
-                                                            <div class="box-content-style feature-content">
-                                                                <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Real-World Project Experience</h4>
-                                                                <p>Work on live projects with real impact. Gain practical skills by
-                                                                    contributing to solutions
-                                                                    used by actual clients or internal teams.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4-whychoose col-md-6">
-                                                        <div class="feature-box box-style hover-style-2">
-                                                            <div class="box-content-style feature-content">
-                                                                <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Career Development</h4>
-                                                                <p>From resume building to interview preparation, we provide guidance to
-                                                                    help you transition
-                                                                    smoothly into full-time roles.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4-whychoose col-md-6">
-                                                        <div class="feature-box box-style hover-style-2">
-                                                            <div class="box-content-style feature-content">
-                                                                <h4 class="uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 25 25" fill="none" stroke="currentColor" 
-                                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-accent mr-2 flex-shrink-0">
-                                                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Mentorship from Industry Experts</h4>
-                                                                <p>Learn directly from seasoned professionals with years of experience in
-                                                                    top-tier tech environments.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cta-section">
-                                                <h3>Ready to Join Us?</h3>
-                                                <p style="margin-top: 15px;" class="mb-30">Partner with our expert consultants to drive digital innovation and
-                                                    business growth</p>
-                                                <a href="mailto:contact@infynitetech.com?subject=UX%Designer%Application&amp;body=UX%Designer%CV"
-                                                    class="theme-btn border-btn">Send Your Cv</a>
-                                            </div>
-                                        </section>
-                                    </section>
-
-                                    <section id="job" class="tabContent mb-30" style="display:none">
-                                        <div class="row">
-                                            <div class="mx-auto">
-                                                <div class="section-title text-center mb-55">
-                                                    <div class="section-heading mb-30">Current <font color="#f00">Openings</font></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="job-grid" id="jobGrid">
-                                            <!-- Job Card 1 -->
-                                            <div class="job-card" data-department="Engineering" data-type="Full-time">
-                                                <div class="job-header">
-                                                    <h2 class="job-title">Business Development Executive</h2>
-                                                    <span class="job-department">Marketing</span>
-                                                </div>
-                                                <div class="job-meta">
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">📍</span>
-                                                        <span>Hyderabad, TG, India</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">💼</span>
-                                                        <span>Full-time</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">⏰</span>
-                                                        <span>Posted 2 days ago</span>
-                                                    </div>
-                                                </div>
-                                                <p class="job-description">
-                                                    Drive growth. Build relationships. Close deals.
-                                                    We’re hiring a Business Development Executive to expand our client base
-                                                    and accelerate sales.
-                                                </p>
-                                                <div class="job-tags">
-                                                    <span class="tag">Business</span>
-                                                    <span class="tag">Marketing</span>
-                                                    <span class="tag">Communications</span>
-                                                    <span class="tag">Dynamic</span>
-                                                </div>
-                                                <a href="mailto:contact@infynitetech.com?subject=BDM%Executive%Application&body=BDM%Executive%CV"
-                                                    class="apply-btn" style="text-align: center;">Apply Now</a>
-                                            </div>
-                                    
-                                            <!-- Job Card 2 -->
-                                            <div class="job-card" data-department="Design" data-type="Full-time">
-                                                <div class="job-header">
-                                                    <h2 class="job-title">UX/UI Designer</h2>
-                                                    <span class="job-department">Design</span>
-                                                </div>
-                                                <div class="job-meta">
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">📍</span>
-                                                        <span>Remote</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">💼</span>
-                                                        <span>Full-time</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">⏰</span>
-                                                        <span>Posted 5 days ago</span>
-                                                    </div>
-                                                </div>
-                                                <p class="job-description">
-                                                    Join our design team to create beautiful and intuitive user experiences. You'll work on diverse projects
-                                                    and have the opportunity to shape product direction.
-                                                </p>
-                                                <div class="job-tags">
-                                                    <span class="tag">Figma</span>
-                                                    <span class="tag">User Research</span>
-                                                    <span class="tag">Prototyping</span>
-                                                    <span class="tag">Design Systems</span>
-                                                </div>
-                                                <a href="mailto:contact@infynitetech.com?subject=UX%Designer%Application&body=UX%Designer%CV"
-                                                    class="apply-btn" style="text-align: center;">Apply Now</a>
-                                            </div>
-                                    
-                                            <!-- Job Card 3 -->
-                                            <div class="job-card" data-department="Marketing" data-type="Remote">
-                                                <div class="job-header">
-                                                    <h2 class="job-title">Content Marketing Manager</h2>
-                                                    <span class="job-department">Marketing</span>
-                                                </div>
-                                                <div class="job-meta">
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">📍</span>
-                                                        <span>Remote</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">💼</span>
-                                                        <span>Full-time</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">⏰</span>
-                                                        <span>Posted 1 week ago</span>
-                                                    </div>
-                                                </div>
-                                                <p class="job-description">
-                                                    Lead our content strategy and create compelling stories that resonate with our audience. This is a fully
-                                                    remote position with flexible working hours.
-                                                </p>
-                                                <div class="job-tags">
-                                                    <span class="tag">SEO</span>
-                                                    <span class="tag">Content Strategy</span>
-                                                    <span class="tag">Analytics</span>
-                                                    <span class="tag">Social Media</span>
-                                                </div>
-                                                <a href="mailto:contact@infynitetech.com?subject=Content%Manager%Application&body=Content%Manager%CV"
-                                                    class="apply-btn" style="text-align: center;">Apply Now</a>
-                                            </div>
-                                    
-                                            <!-- Job Card 4 -->
-                                            <div class="job-card" data-department="Sales" data-type="Full-time">
-                                                <div class="job-header">
-                                                    <h2 class="job-title">Account Executive</h2>
-                                                    <span class="job-department">Sales</span>
-                                                </div>
-                                                <div class="job-meta">
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">📍</span>
-                                                        <span>Hyderabad, TG, India</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">💼</span>
-                                                        <span>Full-time</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">⏰</span>
-                                                        <span>Posted 3 days ago</span>
-                                                    </div>
-                                                </div>
-                                                <p class="job-description">
-                                                    Drive revenue growth by building relationships with enterprise clients. You'll have the opportunity to
-                                                    work with innovative solutions and earn competitive commissions.
-                                                </p>
-                                                <div class="job-tags">
-                                                    <span class="tag">B2B Sales</span>
-                                                    <span class="tag">Salesforce</span>
-                                                    <span class="tag">Enterprise</span>
-                                                    <span class="tag">Negotiation</span>
-                                                </div>
-                                                <a href="mailto:contact@infynitetech.com?subject=Account%Executive%Application&body=Account%Executive%CV"
-                                                    class="apply-btn" style="text-align: center;">Apply Now</a>
-                                            </div>
-                                    
-                                            <!-- Job Card 5 -->
-                                            <div class="job-card" data-department="Product" data-type="Full-time">
-                                                <div class="job-header">
-                                                    <h2 class="job-title">Product Manager</h2>
-                                                    <span class="job-department">Product</span>
-                                                </div>
-                                                <div class="job-meta">
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">📍</span>
-                                                        <span>Hyderabad, TG, India</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">💼</span>
-                                                        <span>Full-time</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">⏰</span>
-                                                        <span>Posted 4 days ago</span>
-                                                    </div>
-                                                </div>
-                                                <p class="job-description">
-                                                    Own product strategy and roadmap for key features. Work cross-functionally to deliver exceptional
-                                                    products that delight our customers.
-                                                </p>
-                                                <div class="job-tags">
-                                                    <span class="tag">Product Strategy</span>
-                                                    <span class="tag">Agile</span>
-                                                    <span class="tag">Data-Driven</span>
-                                                    <span class="tag">User Stories</span>
-                                                </div>
-                                                <a href="mailto:contact@infynitetech.com?subject=Product%Manager%Application&body=Product%Manager%CV"
-                                                    class="apply-btn" style="text-align: center;">Apply Now</a>
-                                            </div>
-                                    
-                                            <!-- Job Card 6 -->
-                                            <div class="job-card" data-department="HR" data-type="Part-time">
-                                                <div class="job-header">
-                                                    <h2 class="job-title">HR Coordinator</h2>
-                                                    <span class="job-department">Human Resources</span>
-                                                </div>
-                                                <div class="job-meta">
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">📍</span>
-                                                        <span>Hyderabad, TG, India</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">💼</span>
-                                                        <span>Part-time</span>
-                                                    </div>
-                                                    <div class="meta-item">
-                                                        <span class="meta-icon">⏰</span>
-                                                        <span>Posted 6 days ago</span>
-                                                    </div>
-                                                </div>
-                                                <p class="job-description">
-                                                    Support our growing team with recruiting, onboarding, and employee engagement initiatives. Perfect for
-                                                    someone looking for flexible work arrangements.
-                                                </p>
-                                                <div class="job-tags">
-                                                    <span class="tag">Recruiting</span>
-                                                    <span class="tag">Onboarding</span>
-                                                    <span class="tag">HRIS</span>
-                                                    <span class="tag">Benefits</span>
-                                                </div>
-                                                <a href="mailto:contact@infynitetech.com?subject=HR%Coordinator%Application&body=HR%Coordinator%CV"
-                                                    class="apply-btn" style="text-align: center;">Apply Now</a>
-                                            </div>
-                                        </div>
-                                    </section>
+                                <div class="cs-cell">
+                                    <div class="cs-num">40%</div>
+                                    <div class="cs-label">Internal promotions last year</div>
+                                </div>
+                                <div class="cs-cell">
+                                    <div class="cs-num">7 Days</div>
+                                    <div class="cs-label">Average onboarding speed</div>
+                                </div>
+                                <div class="cs-cell">
+                                    <div class="cs-num">100%</div>
+                                    <div class="cs-label">Learning budget utilized</div>
+                                </div>
+                            </div>
+                            <div class="story-card">
+                                <blockquote>"InfyniteTech gave me the space to grow, the tools to succeed, and a team that genuinely has
+                                    your back. The work is real, the impact is visible, and the culture is unlike anywhere I've worked
+                                    before."</blockquote>
+                                <cite>— Senior Engineer, InfyniteTech Hyderabad</cite>
                             </div>
                         </div>
                     </div>
-                </section>
+                
+                    <!-- STAT ROW -->
+                    <div style="padding:80px 0 0;">
+                        <div class="stat-row">
+                            <div class="stat-cell fade-up d1">
+                                <div class="num">6+</div>
+                                <div class="lbl">Services Offered</div>
+                                <div class="sub">Full-spectrum IT, BPO, Staffing & Marketing</div>
+                            </div>
+                            <div class="stat-cell fade-up d2">
+                                <div class="num">10+</div>
+                                <div class="lbl">Industries Served</div>
+                                <div class="sub">Healthcare, Finance, E-Commerce, Education & more</div>
+                            </div>
+                            <div class="stat-cell fade-up d3">
+                                <div class="num">24/7</div>
+                                <div class="lbl">Always On Culture</div>
+                                <div class="sub">Round-the-clock team support and flexibility</div>
+                            </div>
+                            <div class="stat-cell fade-up d4">
+                                <div class="num">2</div>
+                                <div class="lbl">Office Locations</div>
+                                <div class="sub">Hyderabad HQ & Warangal — hiring nationally</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- BENEFITS — dark ink band -->
+                    <div class="ink-band sw" style="margin-top:0px;">
+                        <div class="ink-band-inner">
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:64px;">
+                                <div class="fade-up d1">
+                                    <div class="eyebrow gold">Employee Benefits</div>
+                                    <h2 class="sub-page-tittle"
+                                        style="font-weight:700;font-size:clamp(2rem,3.5vw,3rem);line-height:1.08;letter-spacing:-0.03em;">
+                                        Everything You Need<br /><em style="font-style:italic;font-weight:400;">to Do Your Best
+                                            Work</em></h2>
+                                </div>
+                                <p class="fade-up d2" style="color:#051441;font-size:1.15rem;line-height:1.9;">A
+                                    comprehensive and competitive benefits package designed to support your health, financial security,
+                                    growth, and happiness — inside and outside of work.</p>
+                            </div>
+                            <div class="benefits-grid">
+                                <div class="benefit-card fade-up d1">
+                                    <div class="bc-num">01</div>
+                                    <div class="bc-icon">🏥</div>
+                                    <div class="bc-title">Medical Benefits</div>
+                                    <p class="bc-desc">Your health and your family's health come first. Comprehensive coverage that goes
+                                        beyond the basics.</p>
+                                    <ul class="bc-list">
+                                        <li>Group health insurance for you & dependents</li>
+                                        <li>Outpatient & specialist consultations</li>
+                                        <li>Mental health & wellness support</li>
+                                        <li>Annual health check-up program</li>
+                                    </ul>
+                                </div>
+                                <div class="benefit-card fade-up d2">
+                                    <div class="bc-num">02</div>
+                                    <div class="bc-icon">💰</div>
+                                    <div class="bc-title">Competitive Compensation</div>
+                                    <p class="bc-desc">Market-leading packages with structured growth cycles — because great work
+                                        deserves
+                                        great pay.</p>
+                                    <ul class="bc-list">
+                                        <li>Market-competitive base salary</li>
+                                        <li>Quarterly performance bonuses</li>
+                                        <li>Annual merit-based increments</li>
+                                        <li>Employee referral bonus program</li>
+                                    </ul>
+                                </div>
+                                <div class="benefit-card fade-up d3">
+                                    <div class="bc-num">03</div>
+                                    <div class="bc-icon">📈</div>
+                                    <div class="bc-title">Performance Incentives</div>
+                                    <p class="bc-desc">A dynamic incentive program that celebrates excellence, innovation, and the
+                                        people
+                                        behind our success.</p>
+                                    <ul class="bc-list">
+                                        <li>Target-based individual incentives</li>
+                                        <li>Team achievement recognition awards</li>
+                                        <li>Innovation & idea bonus program</li>
+                                        <li>Client satisfaction rewards</li>
+                                    </ul>
+                                </div>
+                                <div class="benefit-card fade-up d4">
+                                    <div class="bc-num">04</div>
+                                    <div class="bc-icon">🎓</div>
+                                    <div class="bc-title">Continuous Learning</div>
+                                    <p class="bc-desc">Your potential is limitless — our learning programs ensure you're always ahead of
+                                        the
+                                        curve.</p>
+                                    <ul class="bc-list">
+                                        <li>Professional development fund (₹20K/year)</li>
+                                        <li>Certification reimbursement program</li>
+                                        <li>Internal knowledge sharing sessions</li>
+                                        <li>Sponsorship for advanced degrees</li>
+                                    </ul>
+                                </div>
+                                <div class="benefit-card fade-up d5">
+                                    <div class="bc-num">05</div>
+                                    <div class="bc-icon">🤝</div>
+                                    <div class="bc-title">Team Building</div>
+                                    <p class="bc-desc">We invest in connection, creativity, and camaraderie — because strong teams build
+                                        extraordinary things.</p>
+                                    <ul class="bc-list">
+                                        <li>Quarterly offsite team retreats</li>
+                                        <li>Cross-department hackathons</li>
+                                        <li>Monthly team lunches & celebrations</li>
+                                        <li>Milestone & anniversary recognition</li>
+                                    </ul>
+                                </div>
+                                <div class="benefit-card fade-up d6">
+                                    <div class="bc-num">06</div>
+                                    <div class="bc-icon">⚽</div>
+                                    <div class="bc-title">Sports & Wellness</div>
+                                    <p class="bc-desc">Staying active builds stronger teams. We make it easy to stay healthy and
+                                        motivated
+                                        together.</p>
+                                    <ul class="bc-list">
+                                        <li>Company cricket & football leagues</li>
+                                        <li>Gym & fitness reimbursement</li>
+                                        <li>Weekend sports events & tournaments</li>
+                                        <li>Flexible hours for work-life balance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- CULTURE — warm band -->
+                    <div class="warm-band sw" style="margin-top:20px;">
+                        <div class="warm-band-inner">
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
+                                <div class="fade-up d1">
+                                    <div class="eyebrow">Our Culture</div>
+                                    <h2
+                                        style="font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.1;letter-spacing:-0.03em;margin-bottom:20px;color:#051441;">
+                                        Where Great People<br />Do Great Things</h2>
+                                    <p style="font-size:0.99rem;color:#051441;line-height:1.9;margin-bottom:14px;">We believe culture
+                                        isn't ping-pong tables — it's psychological safety, meaningful work, and colleagues who
+                                        genuinely
+                                        care. At InfyniteTech, you're trusted to own your work, speak your mind, and shape the direction
+                                        of
+                                        the company.</p>
+                                    <p style="font-size:0.99rem;color:#051441;line-height:1.9;">We operate on radical transparency —
+                                        our leadership shares performance, strategy, and challenges openly. No silos, no politics.</p>
+                                    <div class="culture-pills">
+                                        <span class="pill">Remote Friendly</span>
+                                        <span class="pill">Flat Hierarchy</span>
+                                        <span class="pill">Radical Transparency</span>
+                                        <span class="pill">Fast Promotions</span>
+                                        <span class="pill">Open Door Policy</span>
+                                        <span class="pill">Agile Teams</span>
+                                    </div>
+                                </div>
+                                <div class="fade-up d2">
+                                    <div class="hl-item">
+                                        <div class="hl-num">01</div>
+                                        <div class="hl-text"><strong>Ownership from Day One</strong><span>Every team member is trusted
+                                                with
+                                                real responsibility. No shadow work, no busy tasks — just meaningful impact from your
+                                                first
+                                                week.</span></div>
+                                    </div>
+                                    <div class="hl-item">
+                                        <div class="hl-num">02</div>
+                                        <div class="hl-text"><strong>Fast Career Growth</strong><span>40% of our senior roles were
+                                                filled by
+                                                internal promotions last year. We genuinely invest in growing our people up, not just
+                                                sideways.</span></div>
+                                    </div>
+                                    <div class="hl-item">
+                                        <div class="hl-num">03</div>
+                                        <div class="hl-text"><strong>Collaborative by Default</strong><span>We work in small,
+                                                cross-functional teams where your voice shapes the product, the strategy, and the
+                                                culture
+                                                itself.</span></div>
+                                    </div>
+                                    <div class="hl-item">
+                                        <div class="hl-num">04</div>
+                                        <div class="hl-text"><strong>Zero-Blame Environment</strong><span>Mistakes are learning
+                                                opportunities here, not career-limiting events. We experiment, iterate, and grow
+                                                together —
+                                                always.</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- CTA STRIP -->
+                    <div class="cta-strip sw" style="margin-top:20px;">
+                        <div class="cta-strip-inner fade-up d1">
+                            <div class="cta-strip-left">
+                                <h3>Ready to Join the Team?</h3>
+                                <p>Send us your CV and let's start a conversation about where you fit in the InfyniteTech story.</p>
+                            </div>
+                            <div class="btn-group">
+                                <a href="mailto:contact@infynitetech.com?subject=Career%20Application&body=Hi%20InfyniteTech%20Team%2C%0A%0AI%20am%20interested%20in%20joining%20your%20team.%20Please%20find%20my%20CV%20attached."
+                                    class="btn btn-white">Send Your CV →</a>
+                                <a href="#" class="btn btn-white">Browse Openings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ═══ TAB 2: INTERNSHIP ═══ -->
+                <div id="service-tab-internship" class="service-tab-panel">
+                    <!-- SPLIT BLOCKS — mirrors vm-split / vm-block -->
+                    <div class="intern-split">
+                        <div class="intern-block light fade-up d1">
+                            <div class="big-label">Intern</div>
+                            <div class="eyebrow">Internship Program</div>
+                            <h3>Kickstart Your Career at InfyniteTech</h3>
+                            <p>We are committed to nurturing future technology leaders. Our structured programs are built for students
+                                and
+                                fresh graduates who want <strong>real-world experience</strong> — not coffee runs and shadow work.</p>
+                            <p>Work on live projects, learn from industry veterans, and walk away with skills, connections, and — for
+                                top
+                                performers — <strong>a full-time job offer.</strong></p>
+                            <div class="prog-row">
+                                <div class="prog-cell"><span class="prog-icon">📅</span>
+                                    <div class="prog-label">Duration</div>
+                                    <div class="prog-val">3–6 Months</div>
+                                </div>
+                                <div class="prog-cell"><span class="prog-icon">💻</span>
+                                    <div class="prog-label">Mode</div>
+                                    <div class="prog-val">Hybrid / Remote</div>
+                                </div>
+                                <div class="prog-cell"><span class="prog-icon">💵</span>
+                                    <div class="prog-label">Stipend</div>
+                                    <div class="prog-val">Paid Program</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intern-block dark fade-up d2">
+                            <div class="eyebrow">Pre-Placement Offer</div>
+                            <h3 style="color:#fff;">Top Performers Get<br />Full-Time Offers</h3>
+                            <p style="color:#fff;">Interns who excel get <strong style="color:#051441;">priority
+                                    consideration for full-time roles</strong> within InfyniteTech or our partner network — often before
+                                completing the program.</p>
+                            <p style="color:#fff;">Our PPO rate is among the highest in Hyderabad's tech ecosystem. We
+                                don't just train you — <strong style="color:#051441;">we place you.</strong></p>
+                            <div style="margin-top:28px;">
+                                <a href="mailto:contact@infynitetech.com?subject=Internship%20Application&body=Hi%20InfyniteTech%20Team%2C%0A%0AI%20am%20interested%20in%20your%20internship%20program.%0A%0ADomain%20of%20interest%3A%20%5BYour%20Domain%5D%0A%0APlease%20find%20my%20CV%20attached."
+                                    class="btn btn-white">Apply for Internship →</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- WHAT YOU GAIN — highlight items layout -->
+                    <div class="section-wrap sw" style="margin-top:80px;">
+                        <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:start;">
+                            <div class="fade-up d1">
+                                <div class="eyebrow">What You Gain</div>
+                                <h2
+                                    style="font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.1;letter-spacing:-0.03em;margin-bottom:24px;color:#051441;">
+                                    More Than an Internship.<br />A Head Start.</h2>
+                                <p style="font-size:0.97rem;color:#051441;line-height:1.9;margin-bottom:14px;">Every intern at
+                                    InfyniteTech gets access to the same resources, tools, and mentorship as our full-time team —
+                                    because
+                                    that's the only way real learning happens.</p>
+                                <p style="font-size:0.97rem;color:#051441;line-height:1.9;">You won't be handed a textbook exercise.
+                                    You'll contribute to live projects, present your work to real stakeholders, and build a portfolio
+                                    that
+                                    speaks for itself.</p>
+                            </div>
+                            <div class="fade-up d2">
+                                <div class="hl-item">
+                                    <div class="hl-num">01</div>
+                                    <div class="hl-text"><strong>Hands-on Technical Exposure</strong><span>Real experience in software
+                                            development, cloud, data, AI/ML, cybersecurity, and more — on live projects, not
+                                            simulations.</span></div>
+                                </div>
+                                <div class="hl-item">
+                                    <div class="hl-num">02</div>
+                                    <div class="hl-text"><strong>Mentorship from Industry Experts</strong><span>Weekly 1:1s, code
+                                            reviews,
+                                            and structured feedback from seasoned professionals with years of top-tier tech
+                                            experience.</span></div>
+                                </div>
+                                <div class="hl-item">
+                                    <div class="hl-num">03</div>
+                                    <div class="hl-text"><strong>Career Development Support</strong><span>Resume building, LinkedIn
+                                            optimization, mock interviews, and portfolio reviews — we prepare you for your entire career
+                                            ahead.</span></div>
+                                </div>
+                                <div class="hl-item">
+                                    <div class="hl-num">04</div>
+                                    <div class="hl-text"><strong>Verified Certificate & PPO</strong><span>Every intern receives a
+                                            verified
+                                            completion certificate. Top performers get a Pre-Placement Offer before the program
+                                            ends.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="ink-band sw" style="margin-top:45px;">
+                        <div class="ink-band-inner">
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:64px;">
+                                <div class="fade-up d1">
+                                    <div class="eyebrow gold">Available Domains</div>
+                                    <h2 class="sub-page-tittle"
+                                        style="font-weight:700;font-size:clamp(2rem,3.5vw,3rem);line-height:1.08;letter-spacing:-0.03em;">
+                                        Find Your Domain.<br /><em style="font-style:italic;font-weight:400;">Find Your Calling.</em>
+                                    </h2>
+                                </div>
+                                <p class="fade-up d2" style="color:#051441;font-size:1.15rem;line-height:1.9;">We offer internships
+                                    across all our core service areas. No matter what your passion is, there's a place for you at
+                                    InfyniteTech.</p>
+                            </div>
+                            <div class="benefits-grid">
+                                <div class="benefit-card fade-up d1">
+                                    <div class="bc-num">01</div>
+                                    <div class="bc-icon">💻</div>
+                                    <div class="bc-title">Software Development</div>
+                                    <p class="bc-desc">uild real web and mobile applications using React, Node.js, Python, Java, and
+                                        more alongside our senior engineers.</p>
+                                </div>
+                                <div class="benefit-card fade-up d2">
+                                    <div class="bc-num">02</div>
+                                    <div class="bc-icon">🎨</div>
+                                    <div class="bc-title">UI / UX Design</div>
+                                    <p class="bc-desc">Design user interfaces and experiences using Figma, research methods, and
+                                        prototyping for live client projects.</p>
+                                </div>
+                                <div class="benefit-card fade-up d3">
+                                    <div class="bc-num">03</div>
+                                    <div class="bc-icon">📊</div>
+                                    <div class="bc-title">Digital Marketing</div>
+                                    <p class="bc-desc">Run SEO campaigns, manage social media, write content strategies, and track real
+                                        ROI from day one.</p>
+                                </div>
+                                <div class="benefit-card fade-up d4">
+                                    <div class="bc-num">04</div>
+                                    <div class="bc-icon">🔄</div>
+                                    <div class="bc-title">BPO Operations</div>
+                                    <p class="bc-desc">Learn business process management, client communication, data processing, and
+                                        operational excellence hands-on.</p>
+                                </div>
+                                <div class="benefit-card fade-up d5">
+                                    <div class="bc-num">05</div>
+                                    <div class="bc-icon">🤖</div>
+                                    <div class="bc-title">AI & Data Analytics</div>
+                                    <p class="bc-desc">Work with real datasets, build ML models, and contribute to AI integrations using
+                                        OpenAI, LangChain, and TensorFlow.</p>
+                                </div>
+                                <div class="benefit-card fade-up d6">
+                                    <div class="bc-num">06</div>
+                                    <div class="bc-icon">🤝</div>
+                                    <div class="bc-title">IT Staffing & HR</div>
+                                    <p class="bc-desc">Learn talent sourcing, candidate screening, onboarding, and the full recruitment
+                                        lifecycle inside a growing firm.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- JOURNEY — roadmap style -->
+                    <div class="warm-band sw" style="margin-top:45px;">
+                        <div class="ink-band-inner">
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:64px;">
+                                <div class="fade-up d1">
+                                    <div class="eyebrow gold">Your Journey</div>
+                                    <h2 class="sub-page-tittle"
+                                        style="font-weight:700;font-size:clamp(2rem,3.5vw,3rem);line-height:1.08;letter-spacing:-0.03em;">
+                                        From Application <br />to Full-Time Offer</h2>
+                                </div>
+                                <p class="fade-up d2" style="color:#051441;font-size:1.15rem;line-height:1.9;">Our process is structured, transparent, and
+                                    designed to set you up for success at every stage.</p>
+                            </div>
+                            <div class="journey-track">
+                                <div class="journey-steps">
+                                    <div class="js-item fade-up d1">
+                                        <div class="js-dot">📝</div>
+                                        <div class="js-step">Step 01</div>
+                                        <div class="js-title">Apply Online</div>
+                                        <p class="js-desc">Submit your CV and a brief note about what you're passionate about and which
+                                            domain excites you most.</p>
+                                    </div>
+                                    <div class="js-item fade-up d2">
+                                        <div class="js-dot">📞</div>
+                                        <div class="js-step">Step 02</div>
+                                        <div class="js-title">Screening Call</div>
+                                        <p class="js-desc">A friendly 20-min chat with our HR team to understand your goals, background,
+                                            and
+                                            domain fit.</p>
+                                    </div>
+                                    <div class="js-item fade-up d3">
+                                        <div class="js-dot">💡</div>
+                                        <div class="js-step">Step 03</div>
+                                        <div class="js-title">Skill Assessment</div>
+                                        <p class="js-desc">A short domain task or technical test — no trick questions, just a glimpse of
+                                            how
+                                            you think and work.</p>
+                                    </div>
+                                    <div class="js-item fade-up d4">
+                                        <div class="js-dot">🤝</div>
+                                        <div class="js-step">Step 04</div>
+                                        <div class="js-title">Offer & Onboarding</div>
+                                        <p class="js-desc">Receive your offer letter, meet your mentor, and join your assigned team
+                                            within 7
+                                            days.</p>
+                                    </div>
+                                    <div class="js-item fade-up d5">
+                                        <div class="js-dot">🚀</div>
+                                        <div class="js-step">Step 05</div>
+                                        <div class="js-title">PPO / Placement</div>
+                                        <p class="js-desc">Top performers receive a full-time Pre-Placement Offer or referral to our
+                                            partner
+                                            company network.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- CTA STRIP -->
+                    <div class="cta-strip sw" style="margin-top:80px">
+                        <div class="cta-strip-inner fade-up d1">
+                            <div class="cta-strip-left">
+                                <h3>Ready to Start Your Journey?</h3>
+                                <p>Send us your CV with the domain you're interested in. Every application is reviewed personally — no
+                                    automated rejections.</p>
+                            </div>
+                            <div class="btn-group">
+                                <a href="mailto:contact@infynitetech.com?subject=Internship%20Application&body=Hi%20InfyniteTech%20Team%2C%0A%0AI%20am%20interested%20in%20the%20internship%20program.%0A%0ADomain%20of%20interest%3A%20%5BYour%20Domain%5D%0A%0APlease%20find%20my%20CV%20attached."
+                                    class="btn btn-white">Apply for Internship →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ═══ TAB 3: CURRENT OPENINGS ═══ -->
+                <div id="service-tab-openings" class="service-tab-panel">
+                    <div class="section-wrap openings sw" style="padding-bottom:0;">
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:40px;">
+                            <div class="fade-up d1">
+                                <div class="eyebrow">Current Openings</div>
+                                <h2
+                                    style="font-weight:700;font-size:clamp(3rem,3.5vw,3rem);line-height:1.05;letter-spacing:-0.03em;color:#051441;">
+                                    Find Your Next Role</h2>
+                            </div>
+                            <p class="fade-up d2" style="color:#051441;font-size:0.99rem;line-height:1.9;">We're hiring across multiple
+                                functions. All roles come with competitive pay, real growth opportunities, and a team that will push you
+                                to
+                                be your best. Don't see the perfect fit? Send us your CV anyway.</p>
+                        </div>
+                
+                        <!-- FILTER BAR -->
+                        <div class="filter-bar fade-up d3">
+                            <span class="filter-label">Filter:</span>
+                            <button class="filter-btn on" onclick="filterJobs('all',this)">All Roles (6)</button>
+                            <button class="filter-btn" onclick="filterJobs('marketing',this)">Marketing</button>
+                            <button class="filter-btn" onclick="filterJobs('design',this)">Design</button>
+                            <button class="filter-btn" onclick="filterJobs('sales',this)">Sales</button>
+                            <button class="filter-btn" onclick="filterJobs('product',this)">Product</button>
+                            <button class="filter-btn" onclick="filterJobs('hr',this)">HR</button>
+                            <button class="filter-btn" onclick="filterJobs('remote',this)">Remote Only</button>
+                        </div>
+                    </div>
+                    <!-- JOB LISTINGS -->
+                    <div class="section-wrap-sm openings sw" style="padding-top:0;">
+                        <div class="job-card fade-up d1" data-dept="marketing" data-location="onsite">
+                            <div>
+                                <div class="job-dept dept-marketing"><span class="dept-dot"></span>Marketing</div>
+                                <div class="job-title">Business Development Executive</div>
+                                <p class="job-desc">Drive growth, build client relationships, and close deals that matter. We need a
+                                    sharp,
+                                    energetic BD executive to expand our client base across IT services, staffing, and digital marketing
+                                    —
+                                    someone who thrives on targets and loves the hunt.</p>
+                                <div class="job-meta">
+                                    <span class="job-meta-item">📍 Hyderabad, Telangana</span>
+                                    <span class="job-meta-item">💼 Full-time</span>
+                                    <span class="job-meta-item">🕐 Posted 2 days ago</span>
+                                </div>
+                                <div class="job-tags">
+                                    <span class="job-tag">Business Development</span>
+                                    <span class="job-tag">B2B Sales</span>
+                                    <span class="job-tag">Communications</span>
+                                    <span class="job-tag">CRM</span>
+                                </div>
+                            </div>
+                            <div class="job-actions">
+                                <span class="job-type-badge">Full-time</span>
+                                <span class="job-posted">2 days ago</span>
+                                <a href="mailto:contact@infynitetech.com?subject=Application%20-%20Business%20Development%20Executive&body=Hi%20InfyniteTech%20Team%2C%0A%0AI%20am%20applying%20for%20the%20Business%20Development%20Executive%20role.%20Please%20find%20my%20CV%20attached."
+                                    class="btn btn-primary">Apply Now →</a>
+                            </div>
+                        </div>
+                
+                        <div class="job-card fade-up d2" data-dept="design" data-location="remote">
+                            <div>
+                                <div class="job-dept dept-design"><span class="dept-dot"></span>Design</div>
+                                <div class="job-title">UX / UI Designer</div>
+                                <p class="job-desc">Join our design team to craft beautiful, intuitive experiences across web and
+                                    mobile.
+                                    You'll work on diverse client projects with real ownership over design direction — from early
+                                    wireframes
+                                    to polished production interfaces.</p>
+                                <div class="job-meta">
+                                    <span class="job-meta-item">📍 Remote</span>
+                                    <span class="job-meta-item">💼 Full-time</span>
+                                    <span class="job-meta-item">🕐 Posted 5 days ago</span>
+                                </div>
+                                <div class="job-tags">
+                                    <span class="job-tag">Figma</span>
+                                    <span class="job-tag">User Research</span>
+                                    <span class="job-tag">Prototyping</span>
+                                    <span class="job-tag">Design Systems</span>
+                                </div>
+                            </div>
+                            <div class="job-actions">
+                                <span class="job-type-badge">Full-time</span>
+                                <span class="job-posted">5 days ago</span>
+                                <a href="mailto:contact@infynitetech.com?subject=Application%20-%20UX%20UI%20Designer&body=Hi%20InfyniteTech%20Team%2C%0A%0AI%20am%20applying%20for%20the%20UX%2FUI%20Designer%20role.%20Please%20find%20my%20CV%20attached."
+                                    class="btn btn-primary">Apply Now →</a>
+                            </div>
+                        </div>
+                
+                        <div class="job-card fade-up d3" data-dept="marketing" data-location="remote">
+                            <div>
+                                <div class="job-dept dept-marketing"><span class="dept-dot"></span>Marketing</div>
+                                <div class="job-title">Content Marketing Manager</div>
+                                <p class="job-desc">Lead our content strategy and create compelling stories that build brand authority,
+                                    drive organic traffic, and convert readers into clients. Fully remote with flexible hours — perfect
+                                    for
+                                    a self-driven content leader.</p>
+                                <div class="job-meta">
+                                    <span class="job-meta-item">📍 Remote</span>
+                                    <span class="job-meta-item">💼 Full-time</span>
+                                    <span class="job-meta-item">🕐 Posted 1 week ago</span>
+                                </div>
+                                <div class="job-tags">
+                                    <span class="job-tag">SEO</span>
+                                    <span class="job-tag">Content Strategy</span>
+                                    <span class="job-tag">Analytics</span>
+                                    <span class="job-tag">Social Media</span>
+                                </div>
+                            </div>
+                            <div class="job-actions">
+                                <span class="job-type-badge">Full-time</span>
+                                <span class="job-posted">1 week ago</span>
+                                <a href="mailto:contact@infynitetech.com?subject=Application%20-%20Content%20Marketing%20Manager&body=Hi%20InfyniteTech%20Team%2C%0A%0AI%20am%20applying%20for%20the%20Content%20Marketing%20Manager%20role.%20Please%20find%20my%20CV%20attached."
+                                    class="btn btn-primary">Apply Now →</a>
+                            </div>
+                        </div>
+                
+                        <div class="job-card fade-up d4" data-dept="sales" data-location="onsite">
+                            <div>
+                                <div class="job-dept dept-sales"><span class="dept-dot"></span>Sales</div>
+                                <div class="job-title">Account Executive</div>
+                                <p class="job-desc">Drive revenue by building trusted relationships with enterprise clients. Own the
+                                    full
+                                    sales cycle — from prospecting to closing — with access to innovative solutions and an
+                                    industry-leading
+                                    commission structure.</p>
+                                <div class="job-meta">
+                                    <span class="job-meta-item">📍 Hyderabad, Telangana</span>
+                                    <span class="job-meta-item">💼 Full-time</span>
+                                    <span class="job-meta-item">🕐 Posted 3 days ago</span>
+                                </div>
+                                <div class="job-tags">
+                                    <span class="job-tag">B2B Sales</span>
+                                    <span class="job-tag">Enterprise</span>
+                                    <span class="job-tag">Negotiation</span>
+                                    <span class="job-tag">CRM</span>
+                                </div>
+                            </div>
+                            <div class="job-actions">
+                                <span class="job-type-badge">Full-time</span>
+                                <span class="job-posted">3 days ago</span>
+                                <a href="mailto:contact@infynitetech.com?subject=Application%20-%20Account%20Executive&body=Hi%20InfyniteTech%20Team%2C%0A%0AI%20am%20applying%20for%20the%20Account%20Executive%20role.%20Please%20find%20my%20CV%20attached."
+                                    class="btn btn-primary">Apply Now →</a>
+                            </div>
+                        </div>
+                
+                        <div class="job-card fade-up d5" data-dept="product" data-location="onsite">
+                            <div>
+                                <div class="job-dept dept-product"><span class="dept-dot"></span>Product</div>
+                                <div class="job-title">Product Manager</div>
+                                <p class="job-desc">Own product strategy and roadmap for key client-facing features. Work
+                                    cross-functionally
+                                    with engineering, design, and client success to deliver exceptional products — with real ownership
+                                    over
+                                    what gets built and why.</p>
+                                <div class="job-meta">
+                                    <span class="job-meta-item">📍 Hyderabad, Telangana</span>
+                                    <span class="job-meta-item">💼 Full-time</span>
+                                    <span class="job-meta-item">🕐 Posted 4 days ago</span>
+                                </div>
+                                <div class="job-tags">
+                                    <span class="job-tag">Product Strategy</span>
+                                    <span class="job-tag">Agile / Scrum</span>
+                                    <span class="job-tag">Data-Driven</span>
+                                    <span class="job-tag">User Stories</span>
+                                </div>
+                            </div>
+                            <div class="job-actions">
+                                <span class="job-type-badge">Full-time</span>
+                                <span class="job-posted">4 days ago</span>
+                                <a href="mailto:contact@infynitetech.com?subject=Application%20-%20Product%20Manager&body=Hi%20InfyniteTech%20Team%2C%0A%0AI%20am%20applying%20for%20the%20Product%20Manager%20role.%20Please%20find%20my%20CV%20attached."
+                                    class="btn btn-primary">Apply Now →</a>
+                            </div>
+                        </div>
+                
+                        <div class="job-card fade-up d6" data-dept="hr" data-location="onsite">
+                            <div>
+                                <div class="job-dept dept-hr"><span class="dept-dot"></span>Human Resources</div>
+                                <div class="job-title">HR Coordinator</div>
+                                <p class="job-desc">Support our growing team with recruiting, onboarding, and employee engagement. A
+                                    part-time role with flexible arrangements — ideal for someone who wants meaningful HR work without a
+                                    rigid 9-to-5 commitment.</p>
+                                <div class="job-meta">
+                                    <span class="job-meta-item">📍 Hyderabad, Telangana</span>
+                                    <span class="job-meta-item">💼 Part-time</span>
+                                    <span class="job-meta-item">🕐 Posted 6 days ago</span>
+                                </div>
+                                <div class="job-tags">
+                                    <span class="job-tag">Recruiting</span>
+                                    <span class="job-tag">Onboarding</span>
+                                    <span class="job-tag">HRIS</span>
+                                    <span class="job-tag">Employee Engagement</span>
+                                </div>
+                            </div>
+                            <div class="job-actions">
+                                <span class="job-type-badge part">Part-time</span>
+                                <span class="job-posted">6 days ago</span>
+                                <a href="mailto:contact@infynitetech.com?subject=Application%20-%20HR%20Coordinator&body=Hi%20InfyniteTech%20Team%2C%0A%0AI%20am%20applying%20for%20the%20HR%20Coordinator%20role.%20Please%20find%20my%20CV%20attached."
+                                    class="btn btn-primary">Apply Now →</a>
+                            </div>
+                        </div>
+                
+                        <div class="no-match" id="no-match">No roles found for this filter.
+                            <a href="mailto:contact@infynitetech.com?subject=Open%20Application" style="color:var(--accent)">Send an
+                                open
+                                application →</a>
+                        </div>
+                    </div><!-- /section-wrap-sm -->
+                
+                    <!-- OPENINGS CTA -->
+                    <div class="openings-cta sw">
+                        <div class="openings-cta-inner fade-up d1">
+                            <div class="eyebrow" style="justify-content:center;">Don't See Your Role?</div>
+                            <h3>We're Always Looking<br />for Exceptional People</h3>
+                            <p>If you don't see the right opening, send us an open application. We review every CV personally and keep
+                                strong candidates on file for future opportunities — no automated rejections.</p>
+                            <div class="btn-group" style="justify-content:center;">
+                                <a href="mailto:contact@infynitetech.com?subject=Open%20Application%20-%20InfyniteTech&body=Hi%20InfyniteTech%20Team%2C%0A%0AI%20am%20sending%20an%20open%20application.%20Please%20find%20my%20CV%20attached.%0A%0ARole%20of%20interest%3A%20%5BYour%20preferred%20role%5D"
+                                    class="btn btn-primary">Send Open Application →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         <!-- ========================= JoinUs section End ========================= -->
 
@@ -778,18 +968,33 @@
             <script src="assets/js/main.js"></script>
             <script async data-id="4218465813" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
             <script>
-                function openTab(evt, tabName) { 
-                    var i, x, tablinks;
-                    x = document.getElementsByClassName("tabContent");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("service-tab");
-                    for (i = 0; i < x.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace("active", "");
-                    }
-                    document.getElementById(tabName).style.display = "block";
-                    evt.currentTarget.className += " active";
+                function switchTab(id, btn) {
+                    document.querySelectorAll('.service-tab-btn').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.service-tab-panel').forEach(p => p.classList.remove('active'));
+                    if (btn && btn.classList) btn.classList.add('active');
+                    const panel = document.getElementById('service-tab-' + id);
+                    if (!panel) return;
+                    panel.classList.add('active');
+                    panel.querySelectorAll('.fade-up').forEach(el => {
+                    el.style.animation = 'none';
+                    el.offsetHeight;
+                    el.style.animation = '';
+                    });
+                }
+
+                function filterJobs(type, btn) {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('on'));
+                btn.classList.add('on');
+                const cards = document.querySelectorAll('.job-card');
+                let visible = 0;
+                cards.forEach(card => {
+                    const show = type === 'all'
+                    || card.dataset.dept === type
+                    || (type === 'remote' && card.dataset.location === 'remote');
+                    card.style.display = show ? 'grid' : 'none';
+                    if (show) visible++;
+                });
+                document.getElementById('no-match').style.display = visible === 0 ? 'block' : 'none';
                 }
             </script>
     </body>
