@@ -2916,7 +2916,7 @@ textarea {
     .intro-right p { font-size: 1rem; color: #051441; line-height: 1.9; margin-bottom: 25px; }
     .intro-right p strong { color: #051441; font-weight: 500; }
 
-    .story-card { background: #004a8c; color: #f5f3ee; border-radius: 4px; padding: 36px 40px; margin-top: 36px; position: relative; overflow: hidden; }
+    .story-card { background: #004a8c; color: #fff; border-radius: 25px; padding: 36px 40px; margin-top: 36px; position: relative; overflow: hidden; }
     .story-card::before { content: '"'; position: absolute; top: -20px; left: 24px; font-size: 10rem; color: rgba(212,168,67,0.12); line-height: 1; pointer-events: none; }
     .story-card blockquote { font-style: italic; font-weight: 300; font-size: 1.0rem; line-height: 1.6; color: #fff; margin-bottom: 16px; position: relative; }
     .story-card cite { font-size: 0.88rem; color: #fffb00; letter-spacing: 0.1em; text-transform: uppercase; font-style: normal; }
