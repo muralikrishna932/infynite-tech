@@ -1811,7 +1811,7 @@
     .faq-sidebar h2 em { font-style:italic; font-weight:300; color:var(--accent); }
     .faq-sidebar p { font-size:0.95rem; color:var(--muted); line-height:1.9; margin-bottom:32px; }
     .faq-cats { display:flex; flex-direction:column; gap:2px; }
-    .faq-cat { padding:14px 20px; background:var(--warm); border:1px solid var(--border); font-size:0.99rem; font-weight:500; color:#051441; cursor:pointer; transition:all 0.2s; text-align:left; border-radius:2px; }
+    .faq-cat { padding:14px 20px; background:var(--warm); border:1px solid var(--border); font-size:0.99rem; font-weight:500; color:#051441; cursor:pointer; transition:all 0.2s; text-align:left; border-radius:15px; }
     .faq-cat:hover { color:var(--ink); }
     .faq-cat.active { background:var(--ink); color:var(--paper); border-color:var(--ink); }
     .faq-list { display:flex; flex-direction:column; gap:2px; }
