@@ -1792,7 +1792,7 @@
     .jc:hover .jc-desc { color:#051441; }
     /* pill tags */
     .jc-pills { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:28px; }
-    .jc-pill { font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase; padding:4px 12px; border-radius:2px; border:1px solid var(--border); color:#051441; transition:all 0.3s; }
+    .jc-pill { font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase; padding:4px 12px; border-radius:10px; border:1.5px solid rgb(47, 60, 97); color:#051441; transition:all 0.3s; }
     .jc:hover .jc-pill { border-color:rgba(212,168,67,0.25); color:#051441; }
     /* cta link */
     .jc-cta { display:inline-flex; align-items:center; gap:8px; font-size:0.8rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:#ff3409; text-decoration:none; transition:gap 0.2s, color 0.3s; }
