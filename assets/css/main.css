@@ -3709,7 +3709,7 @@ textarea {
     .office-addr { font-size:0.82rem; color:#051441; line-height:1.65; }
 
     /* contact form */
-    .contact-form { background:var(--paper); padding:48px 40px; border-radius:2px; }
+    .contact-form { background:var(--paper); padding:48px 40px; border-radius:20px; }
     .cf-title {font-weight:600; font-size:1.9rem; color:#051441; margin-bottom:6px; letter-spacing:-0.02em; }
     .cf-sub { font-size:0.94rem; color:#051441; margin-bottom:32px; }
     .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
