@@ -3706,7 +3706,7 @@ textarea {
     .office-cards { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
     .office-card { background:rgba(0, 0, 0, 0.07); border:1px solid rgb(0, 74, 140); padding:20px; border-radius:15px; }
     .office-city { font-weight:600; font-size:0.95rem; color:#051441; margin-bottom:6px; }
-    .office-addr { font-size:0.98rem; color:#051441; line-height:1.65; }
+    .office-addr { font-size:0.82rem; color:#051441; line-height:1.65; }
 
     /* contact form */
     .contact-form { background:var(--paper); padding:48px 40px; border-radius:2px; }
